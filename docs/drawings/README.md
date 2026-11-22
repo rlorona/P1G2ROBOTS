@@ -10,10 +10,13 @@ drawing must be re-exported from Fusion and checked against the values below.
 
 ## Corrected drawings
 
-The corrected drawings delivered by the team are kept in this folder:
+The corrected drawings delivered by the team are kept in this folder as PDF
+exports:
 
-- `drawing-1.png` — corrected drawing sheet delivered for review.
-- `topview.png` — corrected top view of the assembly.
+- `Assembly.pdf` — corrected assembly drawing (overall views, balloons, BOM).
+- `BASE_LINK.pdf` — corrected chassis (`base_link`) drawing.
+- `CAMERA.pdf` — corrected camera support drawing.
+- `Wheel.pdf` — corrected wheel drawing.
 
 These files are the authoritative corrected drawings to be delivered; the
 original assembly drawing (`Proyecto_RM Dibujo_.pdf`) was removed from the
