@@ -1,0 +1,45 @@
+trajectory_tracker:
+  ros__parameters:
+    # Geometry (measured from the CAD/STL)
+    wheelbase: 0.160
+    track_width: 0.202
+    wheel_radius: 0.037
+    max_steering_angle: 0.5235987756   # 30 deg
+
+    # Motion limits
+    max_speed: 0.40
+    min_speed: 0.05
+    max_accel: 0.5
+    max_steering_rate: 1.5
+    max_lateral_accel: 0.5
+
+    # Pure-pursuit lookahead
+    lookahead_min: 0.22
+    lookahead_gain: 0.20
+    lookahead_max: 0.50
+
+    # Loop
+    control_rate: 50.0
+    trajectory_type: "figure8"          # figure8 | oval
+    figure8_a: 1.8
+    figure8_b: 1.44
+    oval_a: 1.5
+    oval_b: 1.0
+    num_laps: 3
+    start_delay: 2.0
+    stop_delay: 2.0
+
+    # Topics
+    steering_command_topic: "/steering_controller/commands"
+    drive_command_topic: "/rear_drive_controller/commands"
+    joint_states_topic: "/joint_states"
+    odom_topic: "/odom"
+    ground_truth_topic: "/ground_truth/odometry"
+    reference_path_topic: "/reference_path"
+    actual_path_topic: "/actual_path"
+
+    # Logging
+    log_csv: true
+    results_dir: "~/.ros/proyecto_rm"
+    publish_paths: true
+    use_sim_time: true

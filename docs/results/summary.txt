@@ -1,0 +1,12 @@
+trajectory: figure8
+path_length_m: 9.9335
+laps_completed: 3
+cross_track_rmse_m: 0.026926
+cross_track_mean_m: 0.021607
+cross_track_max_m: 0.051444
+cross_track_gt_rmse_m: 0.060878
+cross_track_gt_mean_m: 0.053186
+cross_track_gt_max_m: 0.129206
+odom_drift_rmse_m: 0.049679
+odom_drift_final_m: 0.090766
+samples: 3712

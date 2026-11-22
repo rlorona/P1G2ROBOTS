@@ -1,0 +1,3836 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="ackermann_track">
+    <physics name="1ms" type="ignored">
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+
+    <scene>
+      <ambient>0.75 0.75 0.75 1</ambient>
+      <background>0.80 0.85 0.90 1</background>
+      <shadows>true</shadows>
+    </scene>
+
+    <light type="directional" name="sun">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.9 0.9 0.9 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.4 0.2 -0.9</direction>
+    </light>
+
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>20 20</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.55 0.57 0.60 1</ambient>
+            <diffuse>0.55 0.57 0.60 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="figure_eight_track">
+      <static>true</static>
+    <link name="seg_0000">
+      <pose>-1.417684 1.108712 0.001000 0 0 -2.227009</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0001">
+      <pose>-1.441375 1.076826 0.001000 0 0 -2.192604</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0002">
+      <pose>-1.463949 1.044140 0.001000 0 0 -2.157788</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0003">
+      <pose>-1.485358 1.010683 0.001000 0 0 -2.122311</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0004">
+      <pose>-1.505552 0.976479 0.001000 0 0 -2.085913</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0005">
+      <pose>-1.524466 0.941552 0.001000 0 0 -2.048323</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0006">
+      <pose>-1.542028 0.905926 0.001000 0 0 -2.009259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0007">
+      <pose>-1.558153 0.869627 0.001000 0 0 -1.968420</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0008">
+      <pose>-1.572660 0.832655 0.001000 0 0 -1.921023</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0009">
+      <pose>-1.585395 0.795036 0.001000 0 0 -1.873390</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045725 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0010">
+      <pose>-1.596292 0.756849 0.001000 0 0 -1.824145</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0011">
+      <pose>-1.605233 0.718159 0.001000 0 0 -1.771639</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0012">
+      <pose>-1.612029 0.679039 0.001000 0 0 -1.713985</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0013">
+      <pose>-1.616314 0.639572 0.001000 0 0 -1.643923</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045722 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0014">
+      <pose>-1.617910 0.599907 0.001000 0 0 -1.578090</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045717 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0015">
+      <pose>-1.616808 0.560228 0.001000 0 0 -1.507976</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0016">
+      <pose>-1.612549 0.520780 0.001000 0 0 -1.418522</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045716 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0017">
+      <pose>-1.604951 0.481832 0.001000 0 0 -1.337722</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0018">
+      <pose>-1.594115 0.443667 0.001000 0 0 -1.250593</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045710 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0019">
+      <pose>-1.579774 0.406689 0.001000 0 0 -1.151058</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0020">
+      <pose>-1.562060 0.371189 0.001000 0 0 -1.064862</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045711 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0021">
+      <pose>-1.541199 0.337454 0.001000 0 0 -0.969101</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045709 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0022">
+      <pose>-1.517299 0.305791 0.001000 0 0 -0.879307</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0023">
+      <pose>-1.490807 0.276247 0.001000 0 0 -0.800327</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045714 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0024">
+      <pose>-1.462055 0.248894 0.001000 0 0 -0.720580</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045718 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0025">
+      <pose>-1.431268 0.223843 0.001000 0 0 -0.645500</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045720 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0026">
+      <pose>-1.398825 0.200963 0.001000 0 0 -0.582986</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0027">
+      <pose>-1.365067 0.180063 0.001000 0 0 -0.525690</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045721 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0028">
+      <pose>-1.330211 0.161040 0.001000 0 0 -0.473501</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045724 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0029">
+      <pose>-1.294449 0.143771 0.001000 0 0 -0.426196</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0030">
+      <pose>-1.257941 0.128128 0.001000 0 0 -0.383477</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0031">
+      <pose>-1.220825 0.113977 0.001000 0 0 -0.345003</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0032">
+      <pose>-1.183215 0.101191 0.001000 0 0 -0.310412</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0033">
+      <pose>-1.145204 0.089646 0.001000 0 0 -0.279340</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0034">
+      <pose>-1.106869 0.079227 0.001000 0 0 -0.251436</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0035">
+      <pose>-1.068271 0.069826 0.001000 0 0 -0.226366</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0036">
+      <pose>-1.029459 0.061347 0.001000 0 0 -0.203820</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0037">
+      <pose>-0.990474 0.053701 0.001000 0 0 -0.183514</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0038">
+      <pose>-0.951349 0.046809 0.001000 0 0 -0.165189</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0039">
+      <pose>-0.912107 0.040601 0.001000 0 0 -0.148612</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0040">
+      <pose>-0.872768 0.035042 0.001000 0 0 -0.132135</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0041">
+      <pose>-0.833343 0.030125 0.001000 0 0 -0.116023</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0042">
+      <pose>-0.793852 0.025766 0.001000 0 0 -0.103880</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0043">
+      <pose>-0.754314 0.021864 0.001000 0 0 -0.092835</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0044">
+      <pose>-0.714736 0.018381 0.001000 0 0 -0.082749</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0045">
+      <pose>-0.675122 0.015333 0.001000 0 0 -0.070816</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0046">
+      <pose>-0.635477 0.012704 0.001000 0 0 -0.061606</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0047">
+      <pose>-0.595813 0.010403 0.001000 0 0 -0.054313</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0048">
+      <pose>-0.556133 0.008379 0.001000 0 0 -0.047591</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0049">
+      <pose>-0.516438 0.006664 0.001000 0 0 -0.038787</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0050">
+      <pose>-0.476732 0.005238 0.001000 0 0 -0.033004</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0051">
+      <pose>-0.437019 0.004021 0.001000 0 0 -0.028274</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0052">
+      <pose>-0.397300 0.002999 0.001000 0 0 -0.023161</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0053">
+      <pose>-0.357576 0.002188 0.001000 0 0 -0.017636</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0054">
+      <pose>-0.317850 0.001550 0.001000 0 0 -0.014509</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0055">
+      <pose>-0.278121 0.001032 0.001000 0 0 -0.011583</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0056">
+      <pose>-0.238391 0.000653 0.001000 0 0 -0.007484</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0057">
+      <pose>-0.198660 0.000394 0.001000 0 0 -0.005557</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0058">
+      <pose>-0.158928 0.000206 0.001000 0 0 -0.003888</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0059">
+      <pose>-0.119196 0.000091 0.001000 0 0 -0.001890</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0060">
+      <pose>-0.079464 0.000035 0.001000 0 0 -0.000937</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0061">
+      <pose>-0.039732 0.000009 0.001000 0 0 -0.000395</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0062">
+      <pose>0.000000 -0.000000 0.001000 0 0 -0.000039</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0063">
+      <pose>0.039732 -0.000009 0.001000 0 0 -0.000395</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0064">
+      <pose>0.079464 -0.000035 0.001000 0 0 -0.000937</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0065">
+      <pose>0.119196 -0.000091 0.001000 0 0 -0.001890</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0066">
+      <pose>0.158928 -0.000206 0.001000 0 0 -0.003888</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0067">
+      <pose>0.198660 -0.000394 0.001000 0 0 -0.005557</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0068">
+      <pose>0.238391 -0.000653 0.001000 0 0 -0.007484</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0069">
+      <pose>0.278121 -0.001032 0.001000 0 0 -0.011583</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0070">
+      <pose>0.317850 -0.001550 0.001000 0 0 -0.014509</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0071">
+      <pose>0.357576 -0.002188 0.001000 0 0 -0.017636</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0072">
+      <pose>0.397300 -0.002999 0.001000 0 0 -0.023161</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0073">
+      <pose>0.437019 -0.004021 0.001000 0 0 -0.028274</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0074">
+      <pose>0.476732 -0.005238 0.001000 0 0 -0.033004</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0075">
+      <pose>0.516438 -0.006664 0.001000 0 0 -0.038787</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0076">
+      <pose>0.556133 -0.008379 0.001000 0 0 -0.047591</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0077">
+      <pose>0.595813 -0.010403 0.001000 0 0 -0.054313</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0078">
+      <pose>0.635477 -0.012704 0.001000 0 0 -0.061606</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0079">
+      <pose>0.675122 -0.015333 0.001000 0 0 -0.070816</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0080">
+      <pose>0.714736 -0.018381 0.001000 0 0 -0.082749</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0081">
+      <pose>0.754314 -0.021864 0.001000 0 0 -0.092835</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0082">
+      <pose>0.793852 -0.025766 0.001000 0 0 -0.103880</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0083">
+      <pose>0.833343 -0.030125 0.001000 0 0 -0.116023</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0084">
+      <pose>0.872768 -0.035042 0.001000 0 0 -0.132135</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0085">
+      <pose>0.912107 -0.040601 0.001000 0 0 -0.148612</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0086">
+      <pose>0.951349 -0.046809 0.001000 0 0 -0.165189</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0087">
+      <pose>0.990474 -0.053701 0.001000 0 0 -0.183514</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0088">
+      <pose>1.029459 -0.061347 0.001000 0 0 -0.203820</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0089">
+      <pose>1.068271 -0.069826 0.001000 0 0 -0.226366</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0090">
+      <pose>1.106869 -0.079227 0.001000 0 0 -0.251436</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0091">
+      <pose>1.145204 -0.089646 0.001000 0 0 -0.279340</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0092">
+      <pose>1.183215 -0.101191 0.001000 0 0 -0.310412</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0093">
+      <pose>1.220825 -0.113977 0.001000 0 0 -0.345003</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0094">
+      <pose>1.257941 -0.128128 0.001000 0 0 -0.383477</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0095">
+      <pose>1.294449 -0.143771 0.001000 0 0 -0.426196</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0096">
+      <pose>1.330211 -0.161040 0.001000 0 0 -0.473501</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045724 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0097">
+      <pose>1.365067 -0.180063 0.001000 0 0 -0.525690</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045721 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0098">
+      <pose>1.398825 -0.200963 0.001000 0 0 -0.582986</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0099">
+      <pose>1.431268 -0.223843 0.001000 0 0 -0.645500</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045720 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0100">
+      <pose>1.462055 -0.248894 0.001000 0 0 -0.720580</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045718 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0101">
+      <pose>1.490807 -0.276247 0.001000 0 0 -0.800327</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045714 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0102">
+      <pose>1.517299 -0.305791 0.001000 0 0 -0.879307</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0103">
+      <pose>1.541199 -0.337454 0.001000 0 0 -0.969101</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045709 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0104">
+      <pose>1.562060 -0.371189 0.001000 0 0 -1.064862</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045711 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0105">
+      <pose>1.579774 -0.406689 0.001000 0 0 -1.151058</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0106">
+      <pose>1.594115 -0.443667 0.001000 0 0 -1.250593</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045710 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0107">
+      <pose>1.604951 -0.481832 0.001000 0 0 -1.337722</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0108">
+      <pose>1.612549 -0.520780 0.001000 0 0 -1.418522</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045716 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0109">
+      <pose>1.616808 -0.560228 0.001000 0 0 -1.507976</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0110">
+      <pose>1.617910 -0.599907 0.001000 0 0 -1.578090</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045717 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0111">
+      <pose>1.616314 -0.639572 0.001000 0 0 -1.643923</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045722 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0112">
+      <pose>1.612029 -0.679039 0.001000 0 0 -1.713985</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0113">
+      <pose>1.605233 -0.718159 0.001000 0 0 -1.771639</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0114">
+      <pose>1.596292 -0.756849 0.001000 0 0 -1.824145</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0115">
+      <pose>1.585395 -0.795036 0.001000 0 0 -1.873390</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045725 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0116">
+      <pose>1.572660 -0.832655 0.001000 0 0 -1.921023</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0117">
+      <pose>1.558153 -0.869627 0.001000 0 0 -1.968420</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0118">
+      <pose>1.542028 -0.905926 0.001000 0 0 -2.009259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0119">
+      <pose>1.524466 -0.941552 0.001000 0 0 -2.048323</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0120">
+      <pose>1.505552 -0.976479 0.001000 0 0 -2.085913</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0121">
+      <pose>1.485358 -1.010683 0.001000 0 0 -2.122311</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0122">
+      <pose>1.463949 -1.044140 0.001000 0 0 -2.157788</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0123">
+      <pose>1.441375 -1.076826 0.001000 0 0 -2.192604</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0124">
+      <pose>1.417684 -1.108712 0.001000 0 0 -2.227009</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0125">
+      <pose>1.392869 -1.139731 0.001000 0 0 -2.264065</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0126">
+      <pose>1.366961 -1.169844 0.001000 0 0 -2.298471</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0127">
+      <pose>1.340028 -1.199041 0.001000 0 0 -2.333287</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0128">
+      <pose>1.312086 -1.227273 0.001000 0 0 -2.368764</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0129">
+      <pose>1.283149 -1.254482 0.001000 0 0 -2.405162</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0130">
+      <pose>1.253226 -1.280602 0.001000 0 0 -2.442751</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0131">
+      <pose>1.222324 -1.305556 0.001000 0 0 -2.481816</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0132">
+      <pose>1.190450 -1.329255 0.001000 0 0 -2.522654</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0133">
+      <pose>1.157564 -1.351525 0.001000 0 0 -2.570051</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0134">
+      <pose>1.123659 -1.372206 0.001000 0 0 -2.617684</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045725 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0135">
+      <pose>1.088795 -1.391221 0.001000 0 0 -2.666930</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0136">
+      <pose>1.053011 -1.408436 0.001000 0 0 -2.719436</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0137">
+      <pose>1.016337 -1.423654 0.001000 0 0 -2.777090</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0138">
+      <pose>0.978774 -1.436498 0.001000 0 0 -2.847152</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045722 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0139">
+      <pose>0.940426 -1.446762 0.001000 0 0 -2.912984</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045717 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0140">
+      <pose>0.901473 -1.454397 0.001000 0 0 -2.983098</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0141">
+      <pose>0.862052 -1.458901 0.001000 0 0 -3.072553</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045716 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0142">
+      <pose>0.822387 -1.460038 0.001000 0 0 3.129833</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0143">
+      <pose>0.782774 -1.457844 0.001000 0 0 3.042704</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045710 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0144">
+      <pose>0.743550 -1.451970 0.001000 0 0 2.943169</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0145">
+      <pose>0.705027 -1.442481 0.001000 0 0 2.856973</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045711 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0146">
+      <pose>0.667535 -1.429534 0.001000 0 0 2.761212</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045709 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0147">
+      <pose>0.631398 -1.413167 0.001000 0 0 2.671418</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0148">
+      <pose>0.596759 -1.393806 0.001000 0 0 2.592438</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045714 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0149">
+      <pose>0.563763 -1.371760 0.001000 0 0 2.512690</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045718 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0150">
+      <pose>0.532565 -1.347223 0.001000 0 0 2.437610</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045720 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0151">
+      <pose>0.503120 -1.320593 0.001000 0 0 2.375097</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0152">
+      <pose>0.475320 -1.292246 0.001000 0 0 2.317801</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045721 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0153">
+      <pose>0.449110 -1.262417 0.001000 0 0 2.265612</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045724 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0154">
+      <pose>0.424412 -1.231317 0.001000 0 0 2.218306</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0155">
+      <pose>0.401136 -1.199134 0.001000 0 0 2.175588</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0156">
+      <pose>0.379183 -1.166029 0.001000 0 0 2.137114</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0157">
+      <pose>0.358453 -1.132143 0.001000 0 0 2.102522</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0158">
+      <pose>0.338846 -1.097594 0.001000 0 0 2.071451</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0159">
+      <pose>0.320265 -1.062481 0.001000 0 0 2.043547</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0160">
+      <pose>0.302621 -1.026888 0.001000 0 0 2.018477</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0161">
+      <pose>0.285829 -0.990884 0.001000 0 0 1.995931</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0162">
+      <pose>0.269812 -0.954529 0.001000 0 0 1.975624</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0163">
+      <pose>0.254500 -0.917870 0.001000 0 0 1.957299</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0164">
+      <pose>0.239830 -0.880948 0.001000 0 0 1.940723</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0165">
+      <pose>0.225771 -0.843789 0.001000 0 0 1.924246</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0166">
+      <pose>0.212319 -0.806404 0.001000 0 0 1.908134</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0167">
+      <pose>0.199397 -0.768834 0.001000 0 0 1.895991</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0168">
+      <pose>0.186912 -0.731116 0.001000 0 0 1.884946</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0169">
+      <pose>0.174825 -0.693268 0.001000 0 0 1.874860</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0170">
+      <pose>0.163156 -0.655289 0.001000 0 0 1.862927</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0171">
+      <pose>0.151889 -0.617189 0.001000 0 0 1.853717</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0172">
+      <pose>0.140937 -0.578997 0.001000 0 0 1.846424</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0173">
+      <pose>0.130253 -0.540729 0.001000 0 0 1.839701</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0174">
+      <pose>0.119866 -0.502379 0.001000 0 0 1.830898</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0175">
+      <pose>0.109758 -0.463955 0.001000 0 0 1.825115</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0176">
+      <pose>0.099853 -0.425477 0.001000 0 0 1.820385</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0177">
+      <pose>0.090138 -0.386952 0.001000 0 0 1.815272</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0178">
+      <pose>0.080627 -0.348375 0.001000 0 0 1.809747</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0179">
+      <pose>0.071284 -0.309757 0.001000 0 0 1.806620</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0180">
+      <pose>0.062057 -0.271111 0.001000 0 0 1.803694</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0181">
+      <pose>0.052967 -0.232433 0.001000 0 0 1.799594</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0182">
+      <pose>0.043992 -0.193728 0.001000 0 0 1.797668</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0183">
+      <pose>0.035088 -0.155007 0.001000 0 0 1.795999</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0184">
+      <pose>0.026254 -0.116269 0.001000 0 0 1.794001</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0185">
+      <pose>0.017478 -0.077518 0.001000 0 0 1.793048</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0186">
+      <pose>0.008730 -0.038761 0.001000 0 0 1.792506</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0187">
+      <pose>-0.000000 0.000000 0.001000 0 0 1.792149</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0188">
+      <pose>-0.008730 0.038761 0.001000 0 0 1.792506</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0189">
+      <pose>-0.017478 0.077518 0.001000 0 0 1.793048</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0190">
+      <pose>-0.026254 0.116269 0.001000 0 0 1.794001</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0191">
+      <pose>-0.035088 0.155007 0.001000 0 0 1.795999</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0192">
+      <pose>-0.043992 0.193728 0.001000 0 0 1.797668</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0193">
+      <pose>-0.052967 0.232433 0.001000 0 0 1.799594</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0194">
+      <pose>-0.062057 0.271111 0.001000 0 0 1.803694</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0195">
+      <pose>-0.071284 0.309757 0.001000 0 0 1.806620</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0196">
+      <pose>-0.080627 0.348375 0.001000 0 0 1.809747</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0197">
+      <pose>-0.090138 0.386952 0.001000 0 0 1.815272</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0198">
+      <pose>-0.099853 0.425477 0.001000 0 0 1.820385</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0199">
+      <pose>-0.109758 0.463955 0.001000 0 0 1.825115</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0200">
+      <pose>-0.119866 0.502379 0.001000 0 0 1.830898</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0201">
+      <pose>-0.130253 0.540729 0.001000 0 0 1.839701</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0202">
+      <pose>-0.140937 0.578997 0.001000 0 0 1.846424</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0203">
+      <pose>-0.151889 0.617189 0.001000 0 0 1.853717</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0204">
+      <pose>-0.163156 0.655289 0.001000 0 0 1.862927</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0205">
+      <pose>-0.174825 0.693268 0.001000 0 0 1.874860</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0206">
+      <pose>-0.186912 0.731116 0.001000 0 0 1.884946</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0207">
+      <pose>-0.199397 0.768834 0.001000 0 0 1.895991</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0208">
+      <pose>-0.212319 0.806404 0.001000 0 0 1.908134</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0209">
+      <pose>-0.225771 0.843789 0.001000 0 0 1.924246</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045732 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0210">
+      <pose>-0.239830 0.880948 0.001000 0 0 1.940723</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045731 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0211">
+      <pose>-0.254500 0.917870 0.001000 0 0 1.957299</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0212">
+      <pose>-0.269812 0.954529 0.001000 0 0 1.975624</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0213">
+      <pose>-0.285829 0.990884 0.001000 0 0 1.995931</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0214">
+      <pose>-0.302621 1.026888 0.001000 0 0 2.018477</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0215">
+      <pose>-0.320265 1.062481 0.001000 0 0 2.043547</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0216">
+      <pose>-0.338846 1.097594 0.001000 0 0 2.071451</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0217">
+      <pose>-0.358453 1.132143 0.001000 0 0 2.102522</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0218">
+      <pose>-0.379183 1.166029 0.001000 0 0 2.137114</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0219">
+      <pose>-0.401136 1.199134 0.001000 0 0 2.175588</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0220">
+      <pose>-0.424412 1.231317 0.001000 0 0 2.218306</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0221">
+      <pose>-0.449110 1.262417 0.001000 0 0 2.265612</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045724 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0222">
+      <pose>-0.475320 1.292246 0.001000 0 0 2.317801</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045721 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0223">
+      <pose>-0.503120 1.320593 0.001000 0 0 2.375097</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0224">
+      <pose>-0.532565 1.347223 0.001000 0 0 2.437610</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045720 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0225">
+      <pose>-0.563763 1.371760 0.001000 0 0 2.512690</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045718 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0226">
+      <pose>-0.596759 1.393806 0.001000 0 0 2.592438</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045714 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0227">
+      <pose>-0.631398 1.413167 0.001000 0 0 2.671418</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0228">
+      <pose>-0.667535 1.429534 0.001000 0 0 2.761212</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045709 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0229">
+      <pose>-0.705027 1.442481 0.001000 0 0 2.856973</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045711 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0230">
+      <pose>-0.743550 1.451970 0.001000 0 0 2.943169</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0231">
+      <pose>-0.782774 1.457844 0.001000 0 0 3.042704</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045710 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0232">
+      <pose>-0.822387 1.460038 0.001000 0 0 3.129833</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045712 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0233">
+      <pose>-0.862052 1.458901 0.001000 0 0 -3.072553</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045716 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0234">
+      <pose>-0.901473 1.454397 0.001000 0 0 -2.983098</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045719 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0235">
+      <pose>-0.940426 1.446762 0.001000 0 0 -2.912984</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045717 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0236">
+      <pose>-0.978774 1.436498 0.001000 0 0 -2.847152</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045722 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0237">
+      <pose>-1.016337 1.423654 0.001000 0 0 -2.777090</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0238">
+      <pose>-1.053011 1.408436 0.001000 0 0 -2.719436</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0239">
+      <pose>-1.088795 1.391221 0.001000 0 0 -2.666930</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045723 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0240">
+      <pose>-1.123659 1.372206 0.001000 0 0 -2.617684</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045725 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0241">
+      <pose>-1.157564 1.351525 0.001000 0 0 -2.570051</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0242">
+      <pose>-1.190450 1.329255 0.001000 0 0 -2.522654</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0243">
+      <pose>-1.222324 1.305556 0.001000 0 0 -2.481816</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0244">
+      <pose>-1.253226 1.280602 0.001000 0 0 -2.442751</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045726 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0245">
+      <pose>-1.283149 1.254482 0.001000 0 0 -2.405162</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0246">
+      <pose>-1.312086 1.227273 0.001000 0 0 -2.368764</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045727 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0247">
+      <pose>-1.340028 1.199041 0.001000 0 0 -2.333287</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045728 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0248">
+      <pose>-1.366961 1.169844 0.001000 0 0 -2.298471</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045729 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0249">
+      <pose>-1.392869 1.139731 0.001000 0 0 -2.264065</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.045730 0.016000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    </model>
+
+    <!-- Top-down camera for trajectory recording (image streamed through the
+         /top_camera/image_raw topic via ros_gz_image). -->
+    <model name="top_camera">
+      <static>true</static>
+      <pose>0 0 3.00 0 0 0</pose>
+      <link name="link">
+        <sensor name="camera" type="camera">
+          <pose>0 0 0 0 1.5708 0</pose>
+          <camera>
+            <horizontal_fov>1.2</horizontal_fov>
+            <image>
+              <width>1280</width>
+              <height>720</height>
+            </image>
+            <clip>
+              <near>0.05</near>
+              <far>100.0</far>
+            </clip>
+          </camera>
+          <always_on>1</always_on>
+          <update_rate>15</update_rate>
+          <topic>top_camera/image_raw</topic>
+          <visualize>false</visualize>
+        </sensor>
+      </link>
+    </model>
+  </world>
+</sdf>

@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<robot name="proyecto_rm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- =====================================================================
+       Proyecto_RM: Ackermann-steered mobile robot.
+
+       Frame conventions:
+       The CAD (Fusion 360) was exported with its camera at -X.  ROS REP-103
+       expects +X forward, so the CAD frame is kept as `base_link` and a
+       `base_footprint` frame is placed at the ground contact point, rotated
+       180 deg about Z.  All navigation/control is expressed in
+       `base_footprint`; `base_link` is only the CAD body frame.
+
+       The front wheels are attached to virtual steering knuckles (revolute
+       about Z).  The CAD currently has no physical steering mechanism; the
+       knuckles are modelled in the URDF so the robot can be simulated as an
+       Ackermann vehicle.  Rear wheels are the driven wheels.
+
+       Measured from the STL meshes:
+         wheelbase L = 0.160 m, track t = 0.202 m, wheel radius r = 0.037 m
+         base 0.240 x 0.180 x 0.057 m, wheel 0.074 x 0.022 m
+       ===================================================================== -->
+
+  <xacro:include filename="$(find proyecto_rm_description)/urdf/materials.xacro"/>
+  <xacro:include filename="$(find proyecto_rm_description)/urdf/proyecto_rm.ros2control.xacro"/>
+  <xacro:include filename="$(find proyecto_rm_description)/urdf/proyecto_rm.gazebo.xacro"/>
+
+  <xacro:property name="wheelbase" value="0.160"/>
+  <xacro:property name="track" value="0.202"/>
+  <xacro:property name="wheel_radius" value="0.037"/>
+  <xacro:property name="wheel_width" value="0.022"/>
+  <xacro:property name="wheel_x" value="0.080"/>
+  <xacro:property name="wheel_y" value="0.101"/>
+  <xacro:property name="wheel_z" value="0.0375"/>
+  <xacro:property name="steering_limit" value="0.5235987756"/> <!-- 30 deg -->
+
+  <xacro:property name="wheel_mass" value="0.7427551271954168"/>
+  <xacro:property name="wheel_ixx" value="0.000284"/>
+  <xacro:property name="wheel_iyy" value="0.000508"/>
+  <xacro:property name="wheel_izz" value="0.000284"/>
+
+  <!-- ===================== base_footprint ===================== -->
+  <link name="base_footprint"/>
+
+  <joint name="base_footprint_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 3.141592653589793"/>
+    <parent link="base_footprint"/>
+    <child link="base_link"/>
+  </joint>
+
+  <!-- ===================== chassis ===================== -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="0.0012522439589999401 7.597748555653311e-07 0.03887708776758149" rpy="0 0 0"/>
+      <mass value="10.700719425326177"/>
+      <inertia ixx="0.017997" iyy="0.053956" izz="0.06871"
+               ixy="0.0" iyz="-0.0" ixz="-0.000382"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find proyecto_rm_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.046" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.240 0.180 0.057"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- ===================== camera ===================== -->
+  <link name="camera_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.1506832679553741"/>
+      <inertia ixx="1.9e-05" iyy="1.6e-05" izz="1.9e-05"
+               ixy="0.0" iyz="0.0" ixz="0.0"/>
+    </inertial>
+    <visual>
+      <!-- mesh is expressed in the CAD frame; move it to the camera link frame -->
+      <origin xyz="0.0965 0 -0.072" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file://$(find proyecto_rm_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+      </geometry>
+      <material name="dark_gray"/>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <geometry>
+        <box size="0.028 0.030 0.025"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="camera_joint" type="fixed">
+    <origin xyz="-0.0965 0 0.072" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+  </joint>
+
+  <!-- ===================== IMU ===================== -->
+  <!-- The CAD has no IMU; a virtual sensor is placed at the chassis centre.
+       It provides the yaw rate used by the wheel-odometry dead reckoning. -->
+  <link name="imu_link">
+    <inertial>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <mass value="0.001"/>
+      <inertia ixx="1.0e-09" iyy="1.0e-09" izz="1.0e-09"
+               ixy="0.0" iyz="0.0" ixz="0.0"/>
+    </inertial>
+  </link>
+
+  <joint name="imu_joint" type="fixed">
+    <origin xyz="0 0 0.03" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="imu_link"/>
+  </joint>
+
+  <!-- ===================== steering knuckles ===================== -->
+  <xacro:macro name="steering_knuckle" params="prefix y_sign">
+    <link name="${prefix}_steering_link">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.050"/>
+        <inertia ixx="2.0e-06" iyy="2.0e-06" izz="2.0e-06"
+                 ixy="0.0" iyz="0.0" ixz="0.0"/>
+      </inertial>
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="0.008" length="${wheel_width}"/>
+        </geometry>
+        <material name="dark_gray"/>
+      </visual>
+    </link>
+
+    <joint name="${prefix}_steering_joint" type="revolute">
+      <origin xyz="${-wheel_x} ${y_sign * wheel_y} ${wheel_z}" rpy="0 0 0"/>
+      <parent link="base_link"/>
+      <child link="${prefix}_steering_link"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="${-steering_limit}" upper="${steering_limit}"
+             effort="5.0" velocity="2.0"/>
+      <dynamics damping="0.5" friction="0.1"/>
+    </joint>
+  </xacro:macro>
+
+  <xacro:steering_knuckle prefix="front_left"  y_sign="-1"/>
+  <xacro:steering_knuckle prefix="front_right" y_sign="1"/>
+
+  <!-- ===================== wheels ===================== -->
+  <xacro:macro name="wheel" params="name mesh_name cx cy cz parent joint_type jx jy jz">
+    <link name="${name}">
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="${wheel_mass}"/>
+        <inertia ixx="${wheel_ixx}" iyy="${wheel_iyy}" izz="${wheel_izz}"
+                 ixy="0.0" iyz="0.0" ixz="0.0"/>
+      </inertial>
+      <visual>
+        <!-- mesh is expressed in the CAD frame; move it to the wheel link frame -->
+        <origin xyz="${-cx} ${-cy} ${-cz}" rpy="0 0 0"/>
+        <geometry>
+          <mesh filename="file://$(find proyecto_rm_description)/meshes/${mesh_name}" scale="0.001 0.001 0.001"/>
+        </geometry>
+        <material name="black"/>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="1.5707963267948966 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+      </collision>
+    </link>
+
+    <joint name="${name}_joint" type="${joint_type}">
+      <origin xyz="${jx} ${jy} ${jz}" rpy="0 0 0"/>
+      <parent link="${parent}"/>
+      <child link="${name}"/>
+      <axis xyz="0 -1 0"/>
+      <dynamics damping="0.05" friction="0.0"/>
+    </joint>
+  </xacro:macro>
+
+  <!-- front wheels: children of the steering knuckles, passive -->
+  <xacro:wheel name="front_left_wheel"
+               mesh_name="front_left_wheel_1.stl"
+               cx="${-wheel_x}" cy="${-wheel_y}" cz="${wheel_z}"
+               parent="front_left_steering_link" joint_type="continuous"
+               jx="0" jy="0" jz="0"/>
+
+  <xacro:wheel name="front_right_wheel"
+               mesh_name="front_right_wheel_1.stl"
+               cx="${-wheel_x}" cy="${wheel_y}" cz="${wheel_z}"
+               parent="front_right_steering_link" joint_type="continuous"
+               jx="0" jy="0" jz="0"/>
+
+  <!-- rear wheels: driven, attached to the chassis -->
+  <xacro:wheel name="rear_left_wheel"
+               mesh_name="rear_left_wheel_1.stl"
+               cx="${wheel_x}" cy="${-wheel_y}" cz="${wheel_z}"
+               parent="base_link" joint_type="continuous"
+               jx="${wheel_x}" jy="${-wheel_y}" jz="${wheel_z}"/>
+
+  <xacro:wheel name="rear_right_wheel"
+               mesh_name="rear_right_wheel_1.stl"
+               cx="${wheel_x}" cy="${wheel_y}" cz="${wheel_z}"
+               parent="base_link" joint_type="continuous"
+               jx="${wheel_x}" jy="${wheel_y}" jz="${wheel_z}"/>
+
+</robot>

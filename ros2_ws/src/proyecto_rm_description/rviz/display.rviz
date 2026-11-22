@@ -1,0 +1,206 @@
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.3
+      Cell Size: 0.5
+      Class: rviz_default_plugins/Grid
+      Color: 160; 160; 164
+      Frame: base_footprint
+      Name: Grid
+      Plugin Name: rviz_default_plugins/Grid
+      Value: true
+    - Alpha: 1.0
+      Class: rviz_default_plugins/RobotModel
+      Description Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /robot_description
+      Enabled: true
+      Name: RobotModel
+      TF Prefix: ""
+      Value: true
+    - Class: rviz_default_plugins/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        base_footprint:
+          Value: true
+        base_link:
+          Value: true
+        camera_link:
+          Value: true
+        front_left_steering_link:
+          Value: true
+        front_right_steering_link:
+          Value: true
+        front_left_wheel:
+          Value: true
+        front_right_wheel:
+          Value: true
+        rear_left_wheel:
+          Value: true
+        rear_right_wheel:
+          Value: true
+        imu_link:
+          Value: true
+      Marker Scale: 0.5
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: false
+      Tree:
+        base_footprint:
+          base_link:
+            camera_link:
+            front_left_steering_link:
+              front_left_wheel:
+              front_right_steering_link:
+                front_right_wheel:
+            rear_left_wheel:
+            rear_right_wheel:
+            imu_link:
+      Update Interval: 0
+      Value: true
+    - Alpha: 1.0
+      Base Link: base_footprint
+      Goal Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+      Name: Goal Path
+      Obstacle Tracking: false
+      Path Smoothing: false
+      Plugin Name: rviz_default_plugins/Path
+      Trajectory Source: Goal
+      Value: true
+    - Alpha: 1.0
+      Name: Actual Path
+      Plugin Name: rviz_default_plugins/Path
+      Trajectory Source: Message
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /actual_path
+      Value: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: base_footprint
+    Frame Rate: 30
+  Tools:
+    - Class: rviz_default_plugins/Interact
+      Hide Inactive Objects: true
+    - Class: rviz_default_plugins/MoveCamera
+      Name: Move Camera
+    - Class: rviz_default_plugins/Select
+      Name: Select
+    - Class: rviz_default_plugins/FocusCamera
+      Name: Focus Camera
+    - Class: rviz_default_plugins/Measure
+      Line color: 128; 128; 0
+      Name: Measure
+    - Class: rviz_default_plugins/PublishPoint
+      Single click: true
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /clicked_point
+      Name: Publish Point
+    - Class: rviz_default_plugins/SetInitialPose
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /initialpose
+      Name: Set Initial Pose
+    - Class: rviz_default_plugins/SetGoal
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /goal_pose
+      Name: Set Goal
+  Transformation:
+    Current:
+      Class: rviz_default_plugins/TF
+    Current Robot Pose:
+      Aim: 2
+      Frame: base_footprint
+      Odometry Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Reliable
+        Value: /odom
+      Source Frame: base_footprint
+      Publish Usable Path: true
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.05999999865889549
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.05000000074505836
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999977648258
+      Pitch: 0.6097970008850098
+      Target Frame: <Fixed Frame>
+      Value: Orbit (rviz)
+      Yaw: 0.5103846192359924
+    Saved: ~
+  Window Geometry:
+    Height: 846
+    Width: 1200
+    X: 201
+    Y: 69
+  Name: root
+  View Namespace: ""
+  Displays Tree:
+    Global Options1:
+      Values: []
+    RobotModel1:
+      Values: []
+    TF1:
+      Values: []
+    Goal Path1:
+      Values: []
+    Actual Path1:
+      Values: []
+    Height: 400
+    Name: Displays
+    Width: 560
+    collapsed: false
+  Selection:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+    Height: 400
+    Width: 200
+  Tools:
+    collapsed: false
+    Height: 400
+    Width: 200
+  Views:
+    collapsed: false
+    Height: 400
+    Width: 200
+  User Data:
+    collapsed: false

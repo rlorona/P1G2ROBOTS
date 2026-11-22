@@ -1,0 +1,21 @@
+\begin{figure}[htbp]
+  \centering
+  \begin{tikzpicture}[node distance = 9mm]
+    \node[draw, rectangle, minimum width = 6.5cm, minimum height = 2.0cm,
+          align = center, rounded corners] (desc) {
+      URDF / Xacro\\
+      \small frames, joints, sensors, meshes};
+    \node[draw, rectangle, minimum width = 6.5cm, minimum height = 2.0cm,
+          below = of desc, align = center, rounded corners] (ctrl) {
+      ROS 2 \texttt{ros2\_control} hardware component\\
+      \small GazeboSimSystem};
+    \node[draw, rectangle, minimum width = 6.5cm, minimum height = 2.0cm,
+          below = of ctrl, align = center, rounded corners] (sim) {
+      Gazebo Sim 8\\
+      \small physics, odometry, IMU, camera};
+    \draw[->] (desc) -- (ctrl);
+    \draw[->] (ctrl) -- (sim);
+  \end{tikzpicture}
+  \caption{Software architecture of the Proyecto\_RM simulation stack.}
+  \label{fig:arch}
+\end{figure}
