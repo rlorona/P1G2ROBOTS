@@ -3,15 +3,14 @@
 The Fusion 360 source is `cad/original/Proyecto_RM.f3d`. The original assembly
 drawing `Proyecto_RM Dibujo_.pdf` does **not** match the exported STL geometry: several
 dimensions are misplaced or refer to the wrong features. The original file was
-removed from the repository for this reason, and the corrected drawings now in
-`docs/drawings/` are the authoritative ones. The STL meshes in
+removed from the repository for this reason, and the corrected drawings at the
+project root are the authoritative ones. The STL meshes in
 `ros2_ws/src/proyecto_rm_description/meshes/` are the authoritative geometry, so every
 drawing must be re-exported from Fusion and checked against the values below.
 
 ## Corrected drawings
 
-The corrected drawings delivered by the team are kept in this folder as PDF
-exports:
+The corrected drawings delivered by the team are at the project root:
 
 - `Assembly.pdf` — corrected assembly drawing (overall views, balloons, BOM).
 - `BASE_LINK.pdf` — corrected chassis (`base_link`) drawing.

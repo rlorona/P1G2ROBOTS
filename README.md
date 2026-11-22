@@ -6,7 +6,8 @@ trajectory-tracking controller that drives the robot along a figure-eight path.
 
 The robot was designed in Fusion 360. The CAD source (`cad/original/Proyecto_RM.f3d`)
 and the STL meshes (`ros2_ws/src/proyecto_rm_description/meshes/`) are included in
-the repository; the corrected dimensioned drawings live in `docs/drawings/`.
+the repository; the corrected dimensioned drawings are at the project root
+(`Assembly.pdf`, `BASE_LINK.pdf`, `CAMERA.pdf`, `Wheel.pdf`).
 
 ---
 
@@ -14,6 +15,10 @@ the repository; the corrected dimensioned drawings live in `docs/drawings/`.
 
 ```
 .
+├── Assembly.pdf                  Corrected assembly drawing (Fusion export)
+├── BASE_LINK.pdf                 Corrected chassis drawing (Fusion export)
+├── CAMERA.pdf                    Corrected camera support drawing (Fusion export)
+├── Wheel.pdf                     Corrected wheel drawing (Fusion export)
 ├── cad/original/                 Fusion 360 source and CAD metadata (F3D, description package)
 ├── docs/
 │   ├── paper/                    IEEE conference paper (LaTeX sources + PDF)
@@ -251,7 +256,9 @@ The recorded trajectory-tracking run is available here:
 
 Dimensioned part drawings exported from Fusion 360 are stored in
 `docs/drawings/`. See `docs/drawings/README.md` for the list of sheets and the
-dimensions they must contain.
+dimensions they must contain. The corrected drawings delivered by the team are
+at the project root: `Assembly.pdf`, `BASE_LINK.pdf`, `CAMERA.pdf` and
+`Wheel.pdf`.
 
 The original assembly drawing (`Proyecto_RM Dibujo_.pdf`) was removed from the
 repository: its dimensions did not match the exported STL geometry, so the
