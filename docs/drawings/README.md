@@ -8,6 +8,17 @@ removed from the repository for this reason, and the corrected drawings now in
 `ros2_ws/src/proyecto_rm_description/meshes/` are the authoritative geometry, so every
 drawing must be re-exported from Fusion and checked against the values below.
 
+## Corrected drawings
+
+The corrected drawings delivered by the team are kept in this folder:
+
+- `drawing-1.png` — corrected drawing sheet delivered for review.
+- `topview.png` — corrected top view of the assembly.
+
+These files are the authoritative corrected drawings to be delivered; the
+original assembly drawing (`Proyecto_RM Dibujo_.pdf`) was removed from the
+repository because its dimensions did not match the STL geometry.
+
 ## Sheets to export (PDF, A4 landscape, third-angle projection)
 
 | # | Sheet | Required dimensions |
