@@ -1,29 +1,21 @@
 Visualization Manager:
   Class: ""
   Displays:
-    - Alpha: 0.3
-      Cell Size: 0.5
+    - Alpha: 1.0
       Class: rviz_default_plugins/Grid
-      Color: 160; 160; 164
-      Frame: base_footprint
       Name: Grid
-      Plugin Name: rviz_default_plugins/Grid
       Value: true
     - Alpha: 1.0
       Class: rviz_default_plugins/RobotModel
       Description Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
         Value: /robot_description
       Enabled: true
       Name: RobotModel
-      TF Prefix: ""
       Value: true
-    - Class: rviz_default_plugins/TF
+    - Alpha: 1.0
+      Class: rviz_default_plugins/TF
+      Name: TF
       Enabled: true
-      Frame Timeout: 15
       Frames:
         base_footprint:
           Value: true
@@ -47,7 +39,6 @@ Visualization Manager:
           Value: true
       Marker Scale: 0.5
       Name: TF
-      Show Arrows: true
       Show Axes: true
       Show Names: false
       Tree:
@@ -64,28 +55,9 @@ Visualization Manager:
       Update Interval: 0
       Value: true
     - Alpha: 1.0
-      Base Link: base_footprint
-      Goal Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /goal_pose
-      Name: Goal Path
-      Obstacle Tracking: false
-      Path Smoothing: false
-      Plugin Name: rviz_default_plugins/Path
-      Trajectory Source: Goal
-      Value: true
-    - Alpha: 1.0
+      Class: rviz_default_plugins/Path
       Name: Actual Path
-      Plugin Name: rviz_default_plugins/Path
-      Trajectory Source: Message
       Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
         Value: /actual_path
       Value: true
   Global Options:
@@ -95,6 +67,7 @@ Visualization Manager:
   Tools:
     - Class: rviz_default_plugins/Interact
       Hide Inactive Objects: true
+      Name: Interact
     - Class: rviz_default_plugins/MoveCamera
       Name: Move Camera
     - Class: rviz_default_plugins/Select
@@ -106,43 +79,10 @@ Visualization Manager:
       Name: Measure
     - Class: rviz_default_plugins/PublishPoint
       Single click: true
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /clicked_point
       Name: Publish Point
-    - Class: rviz_default_plugins/SetInitialPose
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /initialpose
-      Name: Set Initial Pose
-    - Class: rviz_default_plugins/SetGoal
-      Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /goal_pose
-      Name: Set Goal
   Transformation:
     Current:
       Class: rviz_default_plugins/TF
-    Current Robot Pose:
-      Aim: 2
-      Frame: base_footprint
-      Odometry Topic:
-        Depth: 5
-        Durability Policy: Volatile
-        History Policy: Keep Last
-        Reliability Policy: Reliable
-        Value: /odom
-      Source Frame: base_footprint
-      Publish Usable Path: true
   Value: true
   Views:
     Current:
@@ -174,13 +114,11 @@ Visualization Manager:
   Name: root
   View Namespace: ""
   Displays Tree:
-    Global Options1:
+    Grid1:
       Values: []
     RobotModel1:
       Values: []
     TF1:
-      Values: []
-    Goal Path1:
       Values: []
     Actual Path1:
       Values: []
