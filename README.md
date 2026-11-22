@@ -4,8 +4,9 @@ ROS 2 Jazzy + Gazebo Harmonic simulation of the `Proyecto_RM` robot, including a
 parametric URDF/Xacro model, a `ros2_control` hardware interface, and a
 trajectory-tracking controller that drives the robot along a figure-eight path.
 
-The robot was designed in Fusion 360. The CAD model is included in
-`cad/original/Proyecto_RM.f3d` together with the original assembly drawing.
+The robot was designed in Fusion 360. The CAD source (`cad/original/Proyecto_RM.f3d`)
+and the STL meshes (`ros2_ws/src/proyecto_rm_description/meshes/`) are included in
+the repository; the corrected dimensioned drawings live in `docs/drawings/`.
 
 ---
 
@@ -13,7 +14,7 @@ The robot was designed in Fusion 360. The CAD model is included in
 
 ```
 .
-├── cad/original/                 Fusion 360 source and original drawing (PDF)
+├── cad/original/                 Fusion 360 source and CAD metadata (F3D, description package)
 ├── docs/
 │   ├── paper/                    IEEE conference paper (LaTeX sources + PDF)
 │   ├── drawings/                 Dimensioned part drawings (PDF)
@@ -240,11 +241,21 @@ ffmpeg -y -f concat -safe 0 -i frames/concat.txt -vsync vfr -pix_fmt yuv420p -mo
 Place the final video in the repository (for example
 `docs/results/trajectory.mp4` or a top-level `videos/` folder) before pushing.
 
+### Watch the recorded trajectory video
+
+The recorded trajectory-tracking run is available here:
+
+[Proyecto\_RM trajectory run — Google Drive](https://drive.google.com/file/d/1gkl72S22suhzQ2GmTYdNQAWpvFnu2IcG/view?usp=drive_link)
+
 ## 10. Drawings
 
 Dimensioned part drawings exported from Fusion 360 are stored in
 `docs/drawings/`. See `docs/drawings/README.md` for the list of sheets and the
 dimensions they must contain.
+
+The original assembly drawing (`Proyecto_RM Dibujo_.pdf`) was removed from the
+repository: its dimensions did not match the exported STL geometry, so the
+corrected drawings in `docs/drawings/` are the authoritative ones.
 
 ## 11. Paper
 

@@ -1,11 +1,12 @@
 # Dimensioned drawings
 
 The Fusion 360 source is `cad/original/Proyecto_RM.f3d`. The original assembly
-drawing `cad/original/Proyecto_RM Dibujo_.pdf` does **not** match the exported
-STL geometry: several dimensions are misplaced or refer to the wrong features.
-The STL meshes in `ros2_ws/src/proyecto_rm_description/meshes/` are the
-authoritative geometry, so every drawing must be re-exported from Fusion and
-checked against the values below.
+drawing `Proyecto_RM Dibujo_.pdf` does **not** match the exported STL geometry: several
+dimensions are misplaced or refer to the wrong features. The original file was
+removed from the repository for this reason, and the corrected drawings now in
+`docs/drawings/` are the authoritative ones. The STL meshes in
+`ros2_ws/src/proyecto_rm_description/meshes/` are the authoritative geometry, so every
+drawing must be re-exported from Fusion and checked against the values below.
 
 ## Sheets to export (PDF, A4 landscape, third-angle projection)
 
@@ -29,4 +30,5 @@ checked against the values below.
   (`x = -80 mm`, `y = ±101 mm`, `z = 37.5 mm`) with a ±30° range. If the CAD is
   updated later, add a real kingpin/steering arm at those pivot points.
 - Do not dimension the original PDF: its values disagree with the STL. Use the
-  STL-derived values in the table as the reference for every sheet.
+  STL-derived values in the table as the reference for every sheet. The corrected
+  drawings replace it and are the ones to be delivered.
