@@ -214,22 +214,31 @@ the reference path always coincide.
 ## 9. Recording the trajectory video
 
 The world includes a static top-down camera at `top_camera` with the image
-streamed on `/top_camera/image_raw` through the `ros_gz_image` bridge. To record:
+streamed on `/top_camera/image_raw` through the `ros_gz_image` bridge.
+
+### View the camera stream
 
 ```bash
 source /opt/ros/jazzy/setup.bash
 source ros2_ws/install/setup.bash
-# terminal 1
 ros2 launch proyecto_rm_bringup simulation.launch.py headless:=true
-# terminal 2
+# en otra terminal:
+ros2 run rqt_image_view /top_camera/image_raw
+```
+
+### Record frames and build the video
+
+```bash
 source /opt/ros/jazzy/setup.bash
 source ros2_ws/install/setup.bash
-ros2 launch proyecto_rm_bringup trajectory.launch.py num_laps:=3 max_speed:=0.4
-# terminal 3
-ros2 run ros_gz_image image_bridge /top_camera/image_raw
-python3 scripts/record_camera.py frames/
+ros2 launch proyecto_rm_bringup simulation.launch.py headless:=true
+
+python3 scripts/record_camera.py frames/ 5
 ffmpeg -y -f concat -safe 0 -i frames/concat.txt -vsync vfr -pix_fmt yuv420p -movflags +faststart trajectory.mp4
 ```
+
+Place the final video in the repository (for example
+`docs/results/trajectory.mp4` or a top-level `videos/` folder) before pushing.
 
 ## 10. Drawings
 

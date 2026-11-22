@@ -28,3 +28,6 @@ docs/paper/*.fdb_latexmk
 
 # Simulation outputs (kept in docs/results instead)
 results.csv.tmp
+
+# Videos are kept locally and uploaded separately (GitHub blocks files > 100 MB)
+*.mp4
