@@ -1,4 +1,4 @@
-# Proyecto\_RM — Ackermann-Steered Mobile Robot
+# Proyecto\_RM — Ackermann-Steered Mobile Robot.
 
 ROS 2 Jazzy + Gazebo Harmonic simulation of the `Proyecto_RM` robot, including a
 parametric URDF/Xacro model, a `ros2_control` hardware interface, and a
