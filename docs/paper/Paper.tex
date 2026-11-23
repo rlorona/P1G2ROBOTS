@@ -158,7 +158,48 @@ interfaces for the rear drive wheels. The steering commands are issued with a
 proportional position controller and the drive commands with the
 \texttt{ForwardCommandController}.
 
-\subsection{Trajectory Generation and Tracking}
+\section{Comparative Analysis of Kinematic Models}
+\label{sec:comparative}
+
+The steering architecture adopted for the mobile robot is the Ackermann
+geometry, and the kinematic behaviour of the vehicle was compared against the
+other nonholonomic models considered in the course.
+
+\subsection{Ackermann model}
+The Ackermann constraint keeps the inner front wheel from skidding while the
+vehicle corners, relating the inner and outer steering angles through the
+kinematic condition of the bicycle model:
+\begin{equation}
+  \delta_i = \arctan\left(\frac{L}{R - t/2}\right),
+  \qquad
+  \delta_o = \arctan\left(\frac{L}{R + t/2}\right),
+  \label{eq:ackermann}
+\end{equation}
+with $L$ the wheelbase, $t$ the track width and $R$ the instantaneous turning
+radius. Its advantages are that it reproduces the real behaviour of a passenger
+car and prevents front tyre slip; its limitation is that the inner wheel needs a
+larger steering angle than the bicycle solution, so the demanded curvature is
+higher near the inside of the turn.
+
+\subsection{Bicycle and differential models}
+The simplified bicycle model and the differential-drive model are attractive
+for their low complexity, but they either assume a single reference track or
+equal wheel speeds, so they cannot reproduce the inner/outer wheel geometry of
+an Ackermann platform. Their limitations are therefore a loss of fidelity for
+real vehicles.
+
+\subsection{Real-world application}
+The Ackermann model is superior for small real robots and light vehicles that
+must operate on confined indoor or urban paths, where tyre slip at the inside of
+the turn would otherwise cause loss of control.
+
+\subsection{Technical improvements}
+To mitigate the intrinsic limitations (odometry drift, sensor loss, wheel
+lock-up) the controller integrates the wheel odometry with a virtual inertial
+yaw rate from the IMU, uses a watchdog on the steering and drive commands, and
+saturates the steering demand within the $\pm 30^\circ$ limit.
+
+\section{Trajectory Generation and Tracking}
 \label{sec:trajectory}
 
 A Christmas-tree reference trajectory is used: a tapered trunk, three rounded
