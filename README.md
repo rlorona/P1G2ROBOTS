@@ -186,7 +186,27 @@ Final results of the 3-lap Christmas-tree run (Gazebo Sim 8, ROS 2 Jazzy):
 | Odometry drift RMS | 109 mm |
 | Odometry drift final | 132 mm |
 
-## 7. Model notes
+## 7. Deliverables
+
+Items submitted for the final delivery:
+
+1. **Repository (GitHub/GitLab):** source code of the trajectory and the
+   controller, with this `README.md` containing the exact steps to build,
+   run the simulation and the dependencies/requirements (ROS 2 Jazzy).
+2. **Technical document:** IEEE format (two-column, English) including the
+   Abstract, the theoretical analysis, the mathematical model, the design
+   parameters and the results obtained.
+3. **Assembly plans:** all the bounded drawings of each robot part — see
+   `docs/drawings/`.
+4. **Simulation video:** clear recording where the robot executes the designed
+   trajectory in Gazebo — see `docs/video/trajectory.mp4`.
+5. **Presentation video:** recording exposing the project with the slides
+   (max 5 min; all participants must appear). Video:
+   <https://drive.google.com/file/d/1G0tbty7wQbL91o5IQz3c9XeGfS2OGyxg/view?usp=sharing>
+6. **Presentation:** max 10 numbered slides (mathematical model, design
+   parameters, graphs/videos of the results, conclusions and recommendations).
+
+## 8. Model notes
 
 - **Frames.** The Fusion 360 model has the camera at `-X`, so the CAD frame is
   kept as `base_link` and a `base_footprint` frame is attached at the ground
@@ -210,7 +230,7 @@ Final results of the 3-lap Christmas-tree run (Gazebo Sim 8, ROS 2 Jazzy):
   `/ground_truth/odometry`. The IMU sensor (`imu_link`) publishes the yaw rate
   used by the odometry.
 
-## 8. Regenerating the Gazebo track
+## 9. Regenerating the Gazebo track
 
 ```bash
 python3 scripts/generate_track_world.py
@@ -220,7 +240,7 @@ The script writes `ros2_ws/src/proyecto_rm_bringup/worlds/ackermann_track.sdf`.
 It uses the same parametric curve as the controller, so the painted line and
 the reference path always coincide.
 
-## 9. Recording the trajectory video
+## 10. Recording the trajectory video
 
 The world includes a static top-down camera at `top_camera` with the image
 streamed on `/top_camera/image_raw` through the `ros_gz_image` bridge.
@@ -255,7 +275,7 @@ The recorded trajectory-tracking run is available here:
 
 [Proyecto\_RM trajectory run — Google Drive](https://drive.google.com/file/d/1G0tbty7wQbL91o5IQz3c9XeGfS2OGyxg/view?usp=sharing)
 
-## 10. Drawings
+## 11. Drawings
 
 Dimensioned part drawings exported from Fusion 360 are stored in
 `docs/drawings/`. See `docs/drawings/README.md` for the list of sheets and the
@@ -267,7 +287,7 @@ The original assembly drawing (`Proyecto_RM Dibujo_.pdf`) was removed from the
 repository: its dimensions did not match the exported STL geometry, so the
 corrected drawings in `docs/drawings/` are the authoritative ones.
 
-## 11. Paper
+## 12. Paper
 
 The IEEE conference paper sources are in `docs/paper/`:
 
@@ -282,7 +302,7 @@ pdflatex Paper
 The resulting `docs/paper/Paper.pdf` is a double column, English, conference
 format IEEE paper with an abstract and keywords.
 
-## 12. Authors
+## 13. Authors
 
 - Ricardo Lorona
 - Alejandro Malucin
