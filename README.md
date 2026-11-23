@@ -2,7 +2,8 @@
 
 ROS 2 Jazzy + Gazebo Harmonic simulation of the `Proyecto_RM` robot, including a
 parametric URDF/Xacro model, a `ros2_control` hardware interface, and a
-trajectory-tracking controller that drives the robot along a figure-eight path.
+trajectory-tracking controller that drives the robot along a Christmas-tree path
+(trunk, three rounded branch tiers and a five-point star on top).
 
 The robot was designed in Fusion 360. The CAD source (`cad/original/Proyecto_RM.f3d`)
 and the STL meshes (`ros2_ws/src/proyecto_rm_description/meshes/`) are included in
@@ -32,7 +33,7 @@ the repository; the corrected dimensioned drawings are at the project root
 │       ├── proyecto_rm_control/       Trajectory-tracking controller (Python)
 │       └── proyecto_rm_bringup/       Launch files, Gazebo world, RViz config
 └── scripts/
-    ├── generate_track_world.py   Regenerates the painted figure-eight world
+    ├── generate_track_world.py   Regenerates the painted Christmas-tree world
     └── make_figures.py            Generates the paper figures from the results
 ```
 
@@ -81,7 +82,7 @@ ros2 launch proyecto_rm_bringup demo.launch.py
 
 This single command:
 
-1. starts Gazebo with the `ackermann_track` world (figure-eight painted on the
+1. starts Gazebo with the `ackermann_track` world (Christmas tree painted on the
    floor),
 2. starts `robot_state_publisher` and spawns the robot at the origin,
 3. loads `joint_state_broadcaster`, `steering_controller` and
@@ -89,7 +90,7 @@ This single command:
 4. opens RViz with the robot model, TF tree, reference path and driven path,
 5. after 13 s starts the `trajectory_tracker` node.
 
-The robot waits 2 s and then follows the figure-eight for 3 laps. When it
+The robot waits 2 s and then follows the Christmas-tree trajectory for 3 laps. When it
 finishes, the controller stops the wheels and writes the results to
 `~/.ros/proyecto_rm/`.
 
@@ -104,7 +105,7 @@ In a second terminal:
 ```bash
 source /opt/ros/jazzy/setup.bash
 source ros2_ws/install/setup.bash
-ros2 launch proyecto_rm_bringup trajectory.launch.py num_laps:=3 max_speed:=0.4
+ros2 launch proyecto_rm_bringup trajectory.launch.py num_laps:=3 max_speed:=0.25
 ```
 
 ### Visualize the model only
@@ -119,7 +120,7 @@ Use the joint-state slider panel to move the steering knuckles and the wheels.
 
 The node `proyecto_rm_control/trajectory_tracker` implements:
 
-- a parametric Gerono lemniscate (figure-eight) or an ellipse (oval) path,
+- a Christmas-tree outline with a five-point star on top or an ellipse (oval) path,
 - pure-pursuit lateral control with speed-dependent lookahead,
 - Ackermann steering-angle computation for the inner and outer front wheels,
 - speed scheduling from lateral-acceleration and steering-rate limits,
@@ -132,7 +133,7 @@ The node `proyecto_rm_control/trajectory_tracker` implements:
 
 | Argument      | Default  | Description                          |
 |---------------|----------|--------------------------------------|
-| `trajectory`  | `figure8`| `figure8` or `oval`                  |
+| `trajectory`  | `tree`   | `tree` or `oval`                    |
 | `max_speed`   | `0.40`   | Maximum linear speed [m/s]           |
 | `num_laps`    | `3`      | Number of laps before stopping       |
 | `use_sim_time`| `true`   | Use the Gazebo clock                 |
@@ -148,12 +149,17 @@ The node `proyecto_rm_control/trajectory_tracker` implements:
 | `max_speed`          | 0.40 m/s    | Maximum linear speed                     |
 | `max_lateral_accel`  | 0.50 m/s²   | Lateral-acceleration limit               |
 | `max_steering_rate`  | 1.50 rad/s  | Steering-rate limit                      |
-| `figure8_a`          | 1.80 m      | Figure-eight semi-axis in X              |
-| `figure8_b`          | 1.44 m      | Figure-eight semi-axis in Y              |
+| `lookahead_min`      | 0.14 m      | Minimum pure-pursuit lookahead          |
+| `lookahead_gain`     | 0.10        | Lookahead gain (speed dependent)       |
+| `lookahead_max`      | 0.24 m      | Maximum pure-pursuit lookahead          |
+| `odom_scale`         | 0.97        | Wheel-odometry calibration factor      |
+| `trajectory_type`    | `tree`      | `tree` (Christmas tree) or `oval`      |
 
-The figure-eight has a minimum radius of curvature of about 0.43 m, which is
-larger than the minimum turning radius of the robot (0.378 m at 30° steering),
-so the path is feasible without saturating the steering.
+The Christmas-tree reference is realised as a G1 chain of line segments and
+tangent circular arcs, so all corners are rounded with radii below the
+kinematic limit of the robot. The branch tips are rounded with a radius that
+saturates the steering near the $\pm 30^\circ$ limit, which is where the maximum
+steering angle of the run is observed.
 
 ## 6. Results
 
@@ -170,18 +176,18 @@ cp ~/.ros/proyecto_rm/results.csv docs/results/
 cp ~/.ros/proyecto_rm/summary.txt docs/results/
 ```
 
-Final results of the 3-lap figure-eight run (Gazebo Sim 8, ROS 2 Jazzy):
+Final results of the 3-lap Christmas-tree run (Gazebo Sim 8, ROS 2 Jazzy):
 
 | Metric | Value |
 |---|---|
-| Path length | 9.93 m |
-| Maximum steering angle | 25.1 deg |
-| Cross track error mean | 53 mm |
-| Cross track error RMS | 61 mm |
-| Cross track error maximum | 129 mm |
-| Heading error maximum | 1.8 deg |
-| Odometry drift RMS | 50 mm |
-| Odometry drift final | 91 mm |
+| Path length | 19.9 m |
+| Maximum steering angle | 30.0 deg |
+| Cross track error mean | 22.6 mm |
+| Cross track error RMS | 41.8 mm |
+| Cross track error maximum | 238 mm |
+| Heading error maximum | 3.0 deg |
+| Odometry drift RMS | 109 mm |
+| Odometry drift final | 132 mm |
 
 ## 7. Model notes
 

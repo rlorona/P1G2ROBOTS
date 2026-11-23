@@ -35,7 +35,7 @@ def generate_launch_description():
 
     return LaunchDescription(
         [
-            DeclareLaunchArgument("trajectory", default_value="figure8"),
+            DeclareLaunchArgument("trajectory", default_value="tree"),
             DeclareLaunchArgument("max_speed", default_value="0.35"),
             DeclareLaunchArgument("num_laps", default_value="3"),
             DeclareLaunchArgument("use_sim_time", default_value="true"),

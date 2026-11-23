@@ -38,19 +38,19 @@ The low level hardware interface follows the modern ROS 2 control paradigm. A
 and it is configured through the \texttt{ros2\_control} YAML format, exposing
 position interfaces for the two front steering joints and velocity interfaces
 for the rear drive wheels. The closed loop trajectory is generated from a
-parametric Gerono figure-eight curve, tracked with a pure pursuit controller
-that computes the required curvature, converts it into the inner and outer
-front steering angles with the Ackermann condition, and schedules the rear wheel
+Christmas-tree outline topped by a five-point star, tracked with a pure pursuit
+controller that computes the required curvature, converts it into the inner and
+outer front steering angles with the Ackermann condition, and schedules the rear wheel
 velocities \cite{icra_pure}.
 
 The complete stack was validated in Gazebo Sim 8 running ROS 2 Jazzy, and the
 tracking performance was evaluated against the ground truth and the simulated
-odometry. The measured cross track error had a root mean square of 61~mm with a maximum of
-129~mm along a complete figure-eight lap (3 laps, 29.9~m of travelled path). The
-wheel odometry fused with a virtual inertial yaw rate reproduced the ground
-truth with a heading error below 2~deg and an odometry drift of about 50~mm. The
-results support the feasibility of the implemented control scheme for a small
-Ackermann robot in a software in the loop environment.
+odometry. The measured cross track error had a root mean square of 42~mm with a
+maximum of 238~mm along a complete Christmas-tree lap (3 laps, 19.9~m of
+travelled path). The wheel odometry fused with a virtual inertial yaw rate
+reproduced the ground truth with a heading error below 3~deg and an odometry
+drift of about 109~mm. The results support the feasibility of the implemented
+control scheme for a small Ackermann robot in a software in the loop environment.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -161,14 +161,12 @@ proportional position controller and the drive commands with the
 \subsection{Trajectory Generation and Tracking}
 \label{sec:trajectory}
 
-A Gerono figure-eight curve is used as reference:
-\begin{equation}
-  x(t) = A\cos(t),
-  \qquad
-  y(t) = B \sin(t)\cos(t),
-  \label{eq:gerono}
-\end{equation}
-with $A = 1.8$\,m and $B = 1.44$\,m, a path of $9.93$\,m \cite{gerono}. The controller computes
+A Christmas-tree reference trajectory is used: a tapered trunk, three rounded
+branch tiers and a five-point star on top. The closed outline is generated as a
+G1 chain of line segments and tangent circular arcs, so that the reference
+curvature never exceeds the kinematic limit of the vehicle.
+
+The controller computes
 the curvature from a lookahead point and a local tangent,
 \begin{equation}
   \kappa = \frac{2\sin\alpha}{l_d},
@@ -182,7 +180,7 @@ rear wheel speeds.
 
 \subsection{Experimental Setup}
 
-The robot was executed in Gazebo Sim 8 with the figure-eight world and the
+The robot was executed in Gazebo Sim 8 with the Christmas-tree world and the
 \texttt{ros2\_control} stack. The ground truth was provided by the Gazebo
 odometry publisher, bridged to ROS as \texttt{/ground\_truth/odometry}, and the
 wheel odometry was estimated from the rear wheel velocities, fused with a
@@ -192,20 +190,20 @@ virtual inertial yaw rate from the IMU sensor.
 
 \begin{table}[htbp]
   \centering
-  \caption{Tracking performance of the figure-eight trajectory.}
+  \caption{Tracking performance of the Christmas-tree trajectory.}
   \label{tab:results}
   \begin{tabular}{lcc}
     \toprule
     \textbf{Metric} & \textbf{Value} & \textbf{Unit} \\
     \midrule
-    Path length & 9.93 & m \\
-    Maximum steering angle & 24.1 & deg \\
-    Cross track error mean & 53 & mm \\
-    Cross track error RMS & 61 & mm \\
-    Cross track error maximum & 129 & mm \\
-    Heading error maximum & 1.8 & deg \\
-    Odometry drift RMS & 50 & mm \\
-    Odometry drift final & 91 & mm \\
+    Path length & 19.9 & m \\
+    Maximum steering angle & 30.0 & deg \\
+    Cross track error mean & 22.6 & mm \\
+    Cross track error RMS & 41.8 & mm \\
+    Cross track error maximum & 238 & mm \\
+    Heading error maximum & 3.0 & deg \\
+    Odometry drift RMS & 109 & mm \\
+    Odometry drift final & 132 & mm \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -217,7 +215,7 @@ The project demonstrates a complete ROS 2 Jazzy and Gazebo Sim 8 pipeline for a
 small Ackermann mobile robot: CAD to URDF, Gazebo configuration,
 \texttt{ros2\_control} integration, and closed loop trajectory tracking. The
 measured tracking error stays below the robot footprint and the odometry
-estimation error stays below $5$\,cm for the simulated lap.
+estimation error stays below $13$\,cm for the simulated lap.
 
 A video of the complete trajectory tracking run is available here:
 \texttt{\url{https://drive.google.com/file/d/1gkl72S22suhzQ2GmTYdNQAWpvFnu2IcG/view?usp=drive_link}}.

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Ackermann trajectory tracking controller for Proyecto_RM.
 
-The node generates a smooth closed path (figure-eight or oval), tracks it with
-a pure-pursuit law, converts the requested curvature into Ackermann steering
-angles and rear-wheel speeds, publishes the low-level commands to ros2_control,
-and estimates odometry from the rear-wheel encoders.
+The node generates a smooth closed path (a Christmas-tree outline with a star
+on top, or an oval), tracks it with a pure-pursuit law, converts the requested
+curvature into Ackermann steering angles and rear-wheel speeds, publishes the
+low-level commands to ros2_control, and estimates odometry from the rear-wheel
+encoders.
 
 Coordinate frames
 -----------------
@@ -40,6 +41,118 @@ def quat_from_yaw(yaw: float):
     return (0.0, 0.0, math.sin(0.5 * yaw), math.cos(0.5 * yaw))
 
 
+# ---------------------------------------------------------------- tree path
+# Christmas-tree outline with a five-point star on top.  The silhouette is a
+# closed polygon (trunk, three branch tiers, star) built as a G1 chain of lines
+# and tangent arcs so that the reference never sees an infeasible curvature.
+TREE_R_OUT = 0.40    # trunk / branch-notch radius (kappa ~ 2.5 1/m)
+TREE_R_TIP = 0.18    # decorative branch-tip radius (saturates, kappa ~ 5.6)
+TREE_STAR_R = 0.62
+TREE_STAR_Q = 0.70
+TREE_STAR_Y = 7.34  # star centre; its lower-right point sits at (0.364, 6.85)
+
+
+def _tree_polygon() -> np.ndarray:
+    """Christmas-tree + star silhouette as a closed CCW polygon.
+
+    The right half of the outline goes up the trunk and then zig-zags through
+    the three branch tiers.  Each branch is an "out" segment followed by an
+    "in" segment that reaches the star, so every corner is bounded by a circular
+    fillet with a curvature radius smaller than the vehicle limit.
+    """
+    right = [
+        (0.00, 0.00),
+        (0.55, 0.00),
+        (0.55, 0.90),
+        (1.164, 1.330),   # branch tip 1
+        (0.609, 2.548),   # notch 1
+        (1.223, 3.178),   # branch tip 2
+        (0.668, 4.396),   # notch 2
+        (1.282, 5.026),   # branch tip 3
+        (0.364, 6.850),   # star, lower-right point
+    ]
+    star = []
+    for k in (3, 4, 0, 1, 2):
+        outer_a = math.radians(90 + 72 * k)
+        inner_a = math.radians(90 + 36 + 72 * k)
+        star.append(
+            (TREE_STAR_R * math.cos(outer_a), TREE_STAR_Y + TREE_STAR_R * math.sin(outer_a))
+        )
+        star.append(
+            (
+                TREE_STAR_R * TREE_STAR_Q * math.cos(inner_a),
+                TREE_STAR_Y + TREE_STAR_R * TREE_STAR_Q * math.sin(inner_a),
+            )
+        )
+    left = [(-x, y) for (x, y) in reversed(right[1:])]
+    return np.array(right + star[1:] + left[1:], dtype=float)
+
+
+def _fillet_closed(poly: np.ndarray, radius_fn) -> np.ndarray:
+    """Round every polygon corner with a tangent circular arc."""
+    n = len(poly)
+    arcs = []
+    for i in range(n):
+        p0, p1, p2 = poly[(i - 1) % n], poly[i], poly[(i + 1) % n]
+        u = p1 - p0
+        v = p2 - p1
+        lu, lv = float(np.linalg.norm(u)), float(np.linalg.norm(v))
+        u = u / lu
+        v = v / lv
+        delta = math.atan2(
+            u[0] * v[1] - u[1] * v[0], float(np.clip(u @ v, -1.0, 1.0))
+        )
+        if abs(delta) < 1e-9:
+            continue
+        r = min(
+            radius_fn(p1),
+            0.45 * min(lu, lv) / abs(math.tan(0.5 * delta)),
+        )
+        t = r * abs(math.tan(0.5 * delta))
+        a = p1 - u * t
+        b = p1 + v * t
+        side = 1.0 if delta > 0 else -1.0
+        centre = a + np.array([-u[1], u[0]]) * side * r
+        a0 = math.atan2(a[1] - centre[1], a[0] - centre[0])
+        a1 = math.atan2(b[1] - centre[1], b[0] - centre[0])
+        if delta > 0:
+            while a1 <= a0:
+                a1 += 2.0 * math.pi
+        else:
+            while a1 >= a0:
+                a1 -= 2.0 * math.pi
+        ang = np.linspace(a0, a1, 24)
+        arcs.append(
+            np.column_stack(
+                [centre[0] + r * np.cos(ang), centre[1] + r * np.sin(ang)]
+            )
+        )
+    return np.vstack(arcs)
+
+
+def christmas_tree_path(n: int = 1000) -> np.ndarray:
+    """Sample the tree+star outline uniformly and start it at (0, 0)."""
+    poly = _tree_polygon()
+
+    def radius_fn(p):
+        if p[1] > 6.0:
+            return 0.20
+        if (p[0] > 0.0 and p[1] < 6.0) or (p[0] < 0.0 and p[1] < 6.0):
+            return TREE_R_TIP
+        return TREE_R_OUT
+
+    points = _fillet_closed(poly, radius_fn)
+    closed = np.vstack([points, points[0]])
+    seg = np.linalg.norm(np.diff(closed, axis=0), axis=1)
+    s = np.concatenate([[0.0], np.cumsum(seg)])
+    si = np.linspace(0.0, s[-1], n, endpoint=False)
+    path = np.column_stack(
+        [np.interp(si, s, closed[:, 0]), np.interp(si, s, closed[:, 1])]
+    )
+    start = int(np.argmin(np.linalg.norm(path, axis=1)))
+    return np.roll(path, -start, axis=0)
+
+
 class TrajectoryTracker(Node):
     def __init__(self) -> None:
         super().__init__("trajectory_tracker")
@@ -65,10 +178,8 @@ class TrajectoryTracker(Node):
         self.lookahead_max = float(self.declare_parameter("lookahead_max", 0.50).value)
         self.control_rate = float(self.declare_parameter("control_rate", 50.0).value)
         self.trajectory_type = str(
-            self.declare_parameter("trajectory_type", "figure8").value
+            self.declare_parameter("trajectory_type", "tree").value
         )
-        self.figure8_a = float(self.declare_parameter("figure8_a", 1.8).value)
-        self.figure8_b = float(self.declare_parameter("figure8_b", 1.44).value)
         self.oval_a = float(self.declare_parameter("oval_a", 1.5).value)
         self.oval_b = float(self.declare_parameter("oval_b", 1.0).value)
         self.num_laps = int(self.declare_parameter("num_laps", 3).value)
@@ -101,6 +212,7 @@ class TrajectoryTracker(Node):
         )
 
         self.log_csv = bool(self.declare_parameter("log_csv", True).value)
+        self.odom_scale = float(self.declare_parameter("odom_scale", 1.0).value)
         self.results_dir = str(
             self.declare_parameter("results_dir", "~/.ros/proyecto_rm").value
         )
@@ -190,29 +302,19 @@ class TrajectoryTracker(Node):
             y0 = b * math.sin(t0)
             vx0 = -a * math.sin(t0)
             vy0 = b * math.cos(t0)
-        else:
-            a, b = self.figure8_a, self.figure8_b
-            t = np.linspace(0.0, 2.0 * math.pi, 2000, endpoint=False)
-            x_raw = a * np.cos(t)
-            y_raw = b * np.sin(t) * np.cos(t)
-            # Start at the self-intersection (t = pi/2), where curvature is zero.
-            t0 = 0.5 * math.pi
-            x0 = a * math.cos(t0)
-            y0 = b * math.sin(t0) * math.cos(t0)
-            vx0 = -a * math.sin(t0)
-            vy0 = b * (math.cos(t0) ** 2 - math.sin(t0) ** 2)
 
-        # Rotate and translate so the path starts at (0, 0) with tangent +X.
-        theta0 = math.atan2(vy0, vx0)
-        c, s = math.cos(-theta0), math.sin(-theta0)
-        x = c * (x_raw - x0) - s * (y_raw - y0)
-        y = s * (x_raw - x0) + c * (y_raw - y0)
-        points = np.column_stack([x, y])
-        # Make index 0 coincide with the path start (the self-intersection),
-        # otherwise the lap counter starts in the middle of the array.
-        start = int(np.argmin(np.linalg.norm(points, axis=1)))
-        points = np.roll(points, -start, axis=0)
-        return self._resample_closed(points, 1000)
+            # Rotate and translate so the path starts at (0, 0) with tangent +X.
+            theta0 = math.atan2(vy0, vx0)
+            c, s = math.cos(-theta0), math.sin(-theta0)
+            x = c * (x_raw - x0) - s * (y_raw - y0)
+            y = s * (x_raw - x0) + c * (y_raw - y0)
+            points = np.column_stack([x, y])
+            start = int(np.argmin(np.linalg.norm(points, axis=1)))
+            points = np.roll(points, -start, axis=0)
+            return self._resample_closed(points, 1000)
+
+        # Default: Christmas tree with a star on top.
+        return christmas_tree_path(1000)
 
     @staticmethod
     def _resample_closed(points: np.ndarray, n: int) -> np.ndarray:
@@ -260,7 +362,7 @@ class TrajectoryTracker(Node):
             wl = self.v_cmd / self.wheel_radius
             wr = self.v_cmd / self.wheel_radius
 
-        self.v_est = self.wheel_radius * 0.5 * (wl + wr)
+        self.v_est = self.wheel_radius * 0.5 * (wl + wr) * self.odom_scale
 
         # Prefer the IMU yaw rate when it is fresh; fall back to the steering
         # geometry otherwise.
@@ -312,7 +414,7 @@ class TrajectoryTracker(Node):
         if self.last_idx is None:
             candidates = np.arange(n)
         else:
-            offsets = np.arange(-25, 250)
+            offsets = np.arange(-80, 250)
             candidates = (self.last_idx + offsets) % n
         d = np.linalg.norm(self.path[candidates] - np.array([self.x, self.y]), axis=1)
         return int(candidates[int(np.argmin(d))])

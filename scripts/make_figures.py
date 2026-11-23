@@ -165,7 +165,7 @@ def fig_trajectory(d: dict[str, np.ndarray]) -> None:
     ax.set_xlabel("x [m]")
     ax.set_ylabel("y [m]")
     ax.legend(loc="upper right", frameon=False)
-    ax.set_title("Figure-eight tracking", fontsize=8)
+    ax.set_title("Christmas-tree tracking", fontsize=8)
     fig.savefig(FIGURES / "fig_trajectory.pdf")
     plt.close(fig)
 

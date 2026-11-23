@@ -52,14 +52,14 @@
       </link>
     </model>
 
-    <model name="figure_eight_track">
+    <model name="christmas_tree_track">
       <static>true</static>
     <link name="seg_0000">
-      <pose>-1.417684 1.108712 0.001000 0 0 -2.227009</pose>
+      <pose>0.014948 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -70,11 +70,11 @@
       </visual>
     </link>
     <link name="seg_0001">
-      <pose>-1.441375 1.076826 0.001000 0 0 -2.192604</pose>
+      <pose>0.062288 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -85,11 +85,11 @@
       </visual>
     </link>
     <link name="seg_0002">
-      <pose>-1.463949 1.044140 0.001000 0 0 -2.157788</pose>
+      <pose>0.109629 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -100,11 +100,11 @@
       </visual>
     </link>
     <link name="seg_0003">
-      <pose>-1.485358 1.010683 0.001000 0 0 -2.122311</pose>
+      <pose>0.156969 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -115,11 +115,11 @@
       </visual>
     </link>
     <link name="seg_0004">
-      <pose>-1.505552 0.976479 0.001000 0 0 -2.085913</pose>
+      <pose>0.204309 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -130,11 +130,11 @@
       </visual>
     </link>
     <link name="seg_0005">
-      <pose>-1.524466 0.941552 0.001000 0 0 -2.048323</pose>
+      <pose>0.251649 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -145,11 +145,11 @@
       </visual>
     </link>
     <link name="seg_0006">
-      <pose>-1.542028 0.905926 0.001000 0 0 -2.009259</pose>
+      <pose>0.298990 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -160,11 +160,11 @@
       </visual>
     </link>
     <link name="seg_0007">
-      <pose>-1.558153 0.869627 0.001000 0 0 -1.968420</pose>
+      <pose>0.346330 -0.000000 0.001000 0 0 0.000000</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -175,11 +175,11 @@
       </visual>
     </link>
     <link name="seg_0008">
-      <pose>-1.572660 0.832655 0.001000 0 0 -1.921023</pose>
+      <pose>0.393396 0.003122 0.001000 0 0 0.132642</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053207 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -190,11 +190,11 @@
       </visual>
     </link>
     <link name="seg_0009">
-      <pose>-1.585395 0.795036 0.001000 0 0 -1.873390</pose>
+      <pose>0.438570 0.015330 0.001000 0 0 0.395309</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045725 0.016000 0.002000</size>
+            <size>0.053195 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -205,11 +205,11 @@
       </visual>
     </link>
     <link name="seg_0010">
-      <pose>-1.596292 0.756849 0.001000 0 0 -1.824145</pose>
+      <pose>0.479015 0.038846 0.001000 0 0 0.657973</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053187 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -220,11 +220,11 @@
       </visual>
     </link>
     <link name="seg_0011">
-      <pose>-1.605233 0.718159 0.001000 0 0 -1.771639</pose>
+      <pose>0.511965 0.072053 0.001000 0 0 0.920634</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053186 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -235,11 +235,11 @@
       </visual>
     </link>
     <link name="seg_0012">
-      <pose>-1.612029 0.679039 0.001000 0 0 -1.713985</pose>
+      <pose>0.535161 0.112677 0.001000 0 0 1.183295</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053189 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -250,11 +250,11 @@
       </visual>
     </link>
     <link name="seg_0013">
-      <pose>-1.616314 0.639572 0.001000 0 0 -1.643923</pose>
+      <pose>0.547039 0.157938 0.001000 0 0 1.444990</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045722 0.016000 0.002000</size>
+            <size>0.053204 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -265,11 +265,11 @@
       </visual>
     </link>
     <link name="seg_0014">
-      <pose>-1.617910 0.599907 0.001000 0 0 -1.578090</pose>
+      <pose>0.550000 0.205023 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045717 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -280,11 +280,11 @@
       </visual>
     </link>
     <link name="seg_0015">
-      <pose>-1.616808 0.560228 0.001000 0 0 -1.507976</pose>
+      <pose>0.550000 0.252364 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -295,11 +295,11 @@
       </visual>
     </link>
     <link name="seg_0016">
-      <pose>-1.612549 0.520780 0.001000 0 0 -1.418522</pose>
+      <pose>0.550000 0.299704 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045716 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -310,11 +310,11 @@
       </visual>
     </link>
     <link name="seg_0017">
-      <pose>-1.604951 0.481832 0.001000 0 0 -1.337722</pose>
+      <pose>0.550000 0.347044 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -325,11 +325,11 @@
       </visual>
     </link>
     <link name="seg_0018">
-      <pose>-1.594115 0.443667 0.001000 0 0 -1.250593</pose>
+      <pose>0.550000 0.394384 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045710 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -340,11 +340,11 @@
       </visual>
     </link>
     <link name="seg_0019">
-      <pose>-1.579774 0.406689 0.001000 0 0 -1.151058</pose>
+      <pose>0.550000 0.441725 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -355,11 +355,11 @@
       </visual>
     </link>
     <link name="seg_0020">
-      <pose>-1.562060 0.371189 0.001000 0 0 -1.064862</pose>
+      <pose>0.550000 0.489065 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045711 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -370,11 +370,11 @@
       </visual>
     </link>
     <link name="seg_0021">
-      <pose>-1.541199 0.337454 0.001000 0 0 -0.969101</pose>
+      <pose>0.550000 0.536405 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045709 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -385,11 +385,11 @@
       </visual>
     </link>
     <link name="seg_0022">
-      <pose>-1.517299 0.305791 0.001000 0 0 -0.879307</pose>
+      <pose>0.550000 0.583745 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -400,11 +400,11 @@
       </visual>
     </link>
     <link name="seg_0023">
-      <pose>-1.490807 0.276247 0.001000 0 0 -0.800327</pose>
+      <pose>0.550000 0.631086 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045714 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -415,11 +415,11 @@
       </visual>
     </link>
     <link name="seg_0024">
-      <pose>-1.462055 0.248894 0.001000 0 0 -0.720580</pose>
+      <pose>0.550000 0.678426 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045718 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -430,11 +430,11 @@
       </visual>
     </link>
     <link name="seg_0025">
-      <pose>-1.431268 0.223843 0.001000 0 0 -0.645500</pose>
+      <pose>0.550000 0.725766 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045720 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -445,11 +445,11 @@
       </visual>
     </link>
     <link name="seg_0026">
-      <pose>-1.398825 0.200963 0.001000 0 0 -0.582986</pose>
+      <pose>0.550000 0.773107 0.001000 0 0 1.570796</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -460,11 +460,11 @@
       </visual>
     </link>
     <link name="seg_0027">
-      <pose>-1.365067 0.180063 0.001000 0 0 -0.525690</pose>
+      <pose>0.551981 0.820309 0.001000 0 0 1.486810</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045721 0.016000 0.002000</size>
+            <size>0.053231 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -475,11 +475,11 @@
       </visual>
     </link>
     <link name="seg_0028">
-      <pose>-1.330211 0.161040 0.001000 0 0 -0.473501</pose>
+      <pose>0.561882 0.866074 0.001000 0 0 1.228589</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045724 0.016000 0.002000</size>
+            <size>0.053202 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -490,11 +490,11 @@
       </visual>
     </link>
     <link name="seg_0029">
-      <pose>-1.294449 0.143771 0.001000 0 0 -0.426196</pose>
+      <pose>0.583217 0.907722 0.001000 0 0 0.966170</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053198 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -505,11 +505,11 @@
       </visual>
     </link>
     <link name="seg_0030">
-      <pose>-1.257941 0.128128 0.001000 0 0 -0.383477</pose>
+      <pose>0.614584 0.942469 0.001000 0 0 0.706859</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053217 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -520,11 +520,11 @@
       </visual>
     </link>
     <link name="seg_0031">
-      <pose>-1.220825 0.113977 0.001000 0 0 -0.345003</pose>
+      <pose>0.651924 0.971380 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -535,11 +535,11 @@
       </visual>
     </link>
     <link name="seg_0032">
-      <pose>-1.183215 0.101191 0.001000 0 0 -0.310412</pose>
+      <pose>0.690701 0.998536 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -550,11 +550,11 @@
       </visual>
     </link>
     <link name="seg_0033">
-      <pose>-1.145204 0.089646 0.001000 0 0 -0.279340</pose>
+      <pose>0.729477 1.025693 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -565,11 +565,11 @@
       </visual>
     </link>
     <link name="seg_0034">
-      <pose>-1.106869 0.079227 0.001000 0 0 -0.251436</pose>
+      <pose>0.768254 1.052849 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -580,11 +580,11 @@
       </visual>
     </link>
     <link name="seg_0035">
-      <pose>-1.068271 0.069826 0.001000 0 0 -0.226366</pose>
+      <pose>0.807031 1.080005 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -595,11 +595,11 @@
       </visual>
     </link>
     <link name="seg_0036">
-      <pose>-1.029459 0.061347 0.001000 0 0 -0.203820</pose>
+      <pose>0.845808 1.107162 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -610,11 +610,11 @@
       </visual>
     </link>
     <link name="seg_0037">
-      <pose>-0.990474 0.053701 0.001000 0 0 -0.183514</pose>
+      <pose>0.884584 1.134318 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -625,11 +625,11 @@
       </visual>
     </link>
     <link name="seg_0038">
-      <pose>-0.951349 0.046809 0.001000 0 0 -0.165189</pose>
+      <pose>0.923361 1.161474 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -640,11 +640,11 @@
       </visual>
     </link>
     <link name="seg_0039">
-      <pose>-0.912107 0.040601 0.001000 0 0 -0.148612</pose>
+      <pose>0.962138 1.188631 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -655,11 +655,11 @@
       </visual>
     </link>
     <link name="seg_0040">
-      <pose>-0.872768 0.035042 0.001000 0 0 -0.132135</pose>
+      <pose>1.000914 1.215787 0.001000 0 0 0.610945</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -670,11 +670,11 @@
       </visual>
     </link>
     <link name="seg_0041">
-      <pose>-0.833343 0.030125 0.001000 0 0 -0.116023</pose>
+      <pose>1.039299 1.243461 0.001000 0 0 0.638376</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053309 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -685,11 +685,11 @@
       </visual>
     </link>
     <link name="seg_0042">
-      <pose>-0.793852 0.025766 0.001000 0 0 -0.103880</pose>
+      <pose>1.073622 1.275502 0.001000 0 0 0.863934</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053200 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -700,11 +700,11 @@
       </visual>
     </link>
     <link name="seg_0043">
-      <pose>-0.754314 0.021864 0.001000 0 0 -0.092835</pose>
+      <pose>1.099117 1.314742 0.001000 0 0 1.125339</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053193 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -715,11 +715,11 @@
       </visual>
     </link>
     <link name="seg_0044">
-      <pose>-0.714736 0.018381 0.001000 0 0 -0.082749</pose>
+      <pose>1.113584 1.359240 0.001000 0 0 1.387567</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053198 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -730,11 +730,11 @@
       </visual>
     </link>
     <link name="seg_0045">
-      <pose>-0.675122 0.015333 0.001000 0 0 -0.070816</pose>
+      <pose>1.115951 1.405964 0.001000 0 0 1.652803</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053198 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -745,11 +745,11 @@
       </visual>
     </link>
     <link name="seg_0046">
-      <pose>-0.635477 0.012704 0.001000 0 0 -0.061606</pose>
+      <pose>1.106193 1.451759 0.001000 0 0 1.908593</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053221 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -760,11 +760,11 @@
       </visual>
     </link>
     <link name="seg_0047">
-      <pose>-0.595813 0.010403 0.001000 0 0 -0.054313</pose>
+      <pose>1.088553 1.495575 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -775,11 +775,11 @@
       </visual>
     </link>
     <link name="seg_0048">
-      <pose>-0.556133 0.008379 0.001000 0 0 -0.047591</pose>
+      <pose>1.068924 1.538654 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -790,11 +790,11 @@
       </visual>
     </link>
     <link name="seg_0049">
-      <pose>-0.516438 0.006664 0.001000 0 0 -0.038787</pose>
+      <pose>1.049294 1.581733 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -805,11 +805,11 @@
       </visual>
     </link>
     <link name="seg_0050">
-      <pose>-0.476732 0.005238 0.001000 0 0 -0.033004</pose>
+      <pose>1.029665 1.624811 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -820,11 +820,11 @@
       </visual>
     </link>
     <link name="seg_0051">
-      <pose>-0.437019 0.004021 0.001000 0 0 -0.028274</pose>
+      <pose>1.010035 1.667890 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -835,11 +835,11 @@
       </visual>
     </link>
     <link name="seg_0052">
-      <pose>-0.397300 0.002999 0.001000 0 0 -0.023161</pose>
+      <pose>0.990406 1.710969 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -850,11 +850,11 @@
       </visual>
     </link>
     <link name="seg_0053">
-      <pose>-0.357576 0.002188 0.001000 0 0 -0.017636</pose>
+      <pose>0.970776 1.754048 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -865,11 +865,11 @@
       </visual>
     </link>
     <link name="seg_0054">
-      <pose>-0.317850 0.001550 0.001000 0 0 -0.014509</pose>
+      <pose>0.951147 1.797127 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -880,11 +880,11 @@
       </visual>
     </link>
     <link name="seg_0055">
-      <pose>-0.278121 0.001032 0.001000 0 0 -0.011583</pose>
+      <pose>0.931517 1.840205 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -895,11 +895,11 @@
       </visual>
     </link>
     <link name="seg_0056">
-      <pose>-0.238391 0.000653 0.001000 0 0 -0.007484</pose>
+      <pose>0.911888 1.883284 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -910,11 +910,11 @@
       </visual>
     </link>
     <link name="seg_0057">
-      <pose>-0.198660 0.000394 0.001000 0 0 -0.005557</pose>
+      <pose>0.892258 1.926363 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -925,11 +925,11 @@
       </visual>
     </link>
     <link name="seg_0058">
-      <pose>-0.158928 0.000206 0.001000 0 0 -0.003888</pose>
+      <pose>0.872629 1.969442 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -940,11 +940,11 @@
       </visual>
     </link>
     <link name="seg_0059">
-      <pose>-0.119196 0.000091 0.001000 0 0 -0.001890</pose>
+      <pose>0.852999 2.012521 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -955,11 +955,11 @@
       </visual>
     </link>
     <link name="seg_0060">
-      <pose>-0.079464 0.000035 0.001000 0 0 -0.000937</pose>
+      <pose>0.833370 2.055599 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -970,11 +970,11 @@
       </visual>
     </link>
     <link name="seg_0061">
-      <pose>-0.039732 0.000009 0.001000 0 0 -0.000395</pose>
+      <pose>0.813740 2.098678 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -985,11 +985,11 @@
       </visual>
     </link>
     <link name="seg_0062">
-      <pose>0.000000 -0.000000 0.001000 0 0 -0.000039</pose>
+      <pose>0.794111 2.141757 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1000,11 +1000,11 @@
       </visual>
     </link>
     <link name="seg_0063">
-      <pose>0.039732 -0.000009 0.001000 0 0 -0.000395</pose>
+      <pose>0.774481 2.184836 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1015,11 +1015,11 @@
       </visual>
     </link>
     <link name="seg_0064">
-      <pose>0.079464 -0.000035 0.001000 0 0 -0.000937</pose>
+      <pose>0.754852 2.227915 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1030,11 +1030,11 @@
       </visual>
     </link>
     <link name="seg_0065">
-      <pose>0.119196 -0.000091 0.001000 0 0 -0.001890</pose>
+      <pose>0.735222 2.270993 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1045,11 +1045,11 @@
       </visual>
     </link>
     <link name="seg_0066">
-      <pose>0.158928 -0.000206 0.001000 0 0 -0.003888</pose>
+      <pose>0.715593 2.314072 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1060,11 +1060,11 @@
       </visual>
     </link>
     <link name="seg_0067">
-      <pose>0.198660 -0.000394 0.001000 0 0 -0.005557</pose>
+      <pose>0.695963 2.357151 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1075,11 +1075,11 @@
       </visual>
     </link>
     <link name="seg_0068">
-      <pose>0.238391 -0.000653 0.001000 0 0 -0.007484</pose>
+      <pose>0.676334 2.400230 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1090,11 +1090,11 @@
       </visual>
     </link>
     <link name="seg_0069">
-      <pose>0.278121 -0.001032 0.001000 0 0 -0.011583</pose>
+      <pose>0.658039 2.443823 0.001000 0 0 1.937882</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053255 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1105,11 +1105,11 @@
       </visual>
     </link>
     <link name="seg_0070">
-      <pose>0.317850 -0.001550 0.001000 0 0 -0.014509</pose>
+      <pose>0.646748 2.489305 0.001000 0 0 1.690225</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053194 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1120,11 +1120,11 @@
       </visual>
     </link>
     <link name="seg_0071">
-      <pose>0.357576 -0.002188 0.001000 0 0 -0.017636</pose>
+      <pose>0.647313 2.536088 0.001000 0 0 1.427210</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053194 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1135,11 +1135,11 @@
       </visual>
     </link>
     <link name="seg_0072">
-      <pose>0.397300 -0.002999 0.001000 0 0 -0.023161</pose>
+      <pose>0.660022 2.581114 0.001000 0 0 1.164196</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053193 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1150,11 +1150,11 @@
       </visual>
     </link>
     <link name="seg_0073">
-      <pose>0.437019 -0.004021 0.001000 0 0 -0.028274</pose>
+      <pose>0.683952 2.621336 0.001000 0 0 0.904007</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053209 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1165,11 +1165,11 @@
       </visual>
     </link>
     <link name="seg_0074">
-      <pose>0.476732 -0.005238 0.001000 0 0 -0.033004</pose>
+      <pose>0.715072 2.656836 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1180,11 +1180,11 @@
       </visual>
     </link>
     <link name="seg_0075">
-      <pose>0.516438 -0.006664 0.001000 0 0 -0.038787</pose>
+      <pose>0.748113 2.690738 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1195,11 +1195,11 @@
       </visual>
     </link>
     <link name="seg_0076">
-      <pose>0.556133 -0.008379 0.001000 0 0 -0.047591</pose>
+      <pose>0.781154 2.724641 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1210,11 +1210,11 @@
       </visual>
     </link>
     <link name="seg_0077">
-      <pose>0.595813 -0.010403 0.001000 0 0 -0.054313</pose>
+      <pose>0.814196 2.758543 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1225,11 +1225,11 @@
       </visual>
     </link>
     <link name="seg_0078">
-      <pose>0.635477 -0.012704 0.001000 0 0 -0.061606</pose>
+      <pose>0.847237 2.792445 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1240,11 +1240,11 @@
       </visual>
     </link>
     <link name="seg_0079">
-      <pose>0.675122 -0.015333 0.001000 0 0 -0.070816</pose>
+      <pose>0.880279 2.826348 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1255,11 +1255,11 @@
       </visual>
     </link>
     <link name="seg_0080">
-      <pose>0.714736 -0.018381 0.001000 0 0 -0.082749</pose>
+      <pose>0.913320 2.860250 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1270,11 +1270,11 @@
       </visual>
     </link>
     <link name="seg_0081">
-      <pose>0.754314 -0.021864 0.001000 0 0 -0.092835</pose>
+      <pose>0.946361 2.894152 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1285,11 +1285,11 @@
       </visual>
     </link>
     <link name="seg_0082">
-      <pose>0.793852 -0.025766 0.001000 0 0 -0.103880</pose>
+      <pose>0.979403 2.928055 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1300,11 +1300,11 @@
       </visual>
     </link>
     <link name="seg_0083">
-      <pose>0.833343 -0.030125 0.001000 0 0 -0.116023</pose>
+      <pose>1.012444 2.961957 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1315,11 +1315,11 @@
       </visual>
     </link>
     <link name="seg_0084">
-      <pose>0.872768 -0.035042 0.001000 0 0 -0.132135</pose>
+      <pose>1.045485 2.995859 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1330,11 +1330,11 @@
       </visual>
     </link>
     <link name="seg_0085">
-      <pose>0.912107 -0.040601 0.001000 0 0 -0.148612</pose>
+      <pose>1.078527 3.029762 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1345,11 +1345,11 @@
       </visual>
     </link>
     <link name="seg_0086">
-      <pose>0.951349 -0.046809 0.001000 0 0 -0.165189</pose>
+      <pose>1.111568 3.063664 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1360,11 +1360,11 @@
       </visual>
     </link>
     <link name="seg_0087">
-      <pose>0.990474 -0.053701 0.001000 0 0 -0.183514</pose>
+      <pose>1.143333 3.098659 0.001000 0 0 0.869272</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053242 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1375,11 +1375,11 @@
       </visual>
     </link>
     <link name="seg_0088">
-      <pose>1.029459 -0.061347 0.001000 0 0 -0.203820</pose>
+      <pose>1.168828 3.137957 0.001000 0 0 1.121449</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053196 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1390,11 +1390,11 @@
       </visual>
     </link>
     <link name="seg_0089">
-      <pose>1.068271 -0.069826 0.001000 0 0 -0.226366</pose>
+      <pose>1.183450 3.182402 0.001000 0 0 1.384464</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053197 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1405,11 +1405,11 @@
       </visual>
     </link>
     <link name="seg_0090">
-      <pose>1.106869 -0.079227 0.001000 0 0 -0.251436</pose>
+      <pose>1.186014 3.229122 0.001000 0 0 1.647478</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053198 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1420,11 +1420,11 @@
       </visual>
     </link>
     <link name="seg_0091">
-      <pose>1.145204 -0.089646 0.001000 0 0 -0.279340</pose>
+      <pose>1.176436 3.274947 0.001000 0 0 1.906160</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053221 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1435,11 +1435,11 @@
       </visual>
     </link>
     <link name="seg_0092">
-      <pose>1.183215 -0.101191 0.001000 0 0 -0.310412</pose>
+      <pose>1.158851 3.318782 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1450,11 +1450,11 @@
       </visual>
     </link>
     <link name="seg_0093">
-      <pose>1.220825 -0.113977 0.001000 0 0 -0.345003</pose>
+      <pose>1.139221 3.361860 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1465,11 +1465,11 @@
       </visual>
     </link>
     <link name="seg_0094">
-      <pose>1.257941 -0.128128 0.001000 0 0 -0.383477</pose>
+      <pose>1.119592 3.404939 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1480,11 +1480,11 @@
       </visual>
     </link>
     <link name="seg_0095">
-      <pose>1.294449 -0.143771 0.001000 0 0 -0.426196</pose>
+      <pose>1.099962 3.448018 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1495,11 +1495,11 @@
       </visual>
     </link>
     <link name="seg_0096">
-      <pose>1.330211 -0.161040 0.001000 0 0 -0.473501</pose>
+      <pose>1.080333 3.491097 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045724 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1510,11 +1510,11 @@
       </visual>
     </link>
     <link name="seg_0097">
-      <pose>1.365067 -0.180063 0.001000 0 0 -0.525690</pose>
+      <pose>1.060703 3.534176 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045721 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1525,11 +1525,11 @@
       </visual>
     </link>
     <link name="seg_0098">
-      <pose>1.398825 -0.200963 0.001000 0 0 -0.582986</pose>
+      <pose>1.041074 3.577254 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1540,11 +1540,11 @@
       </visual>
     </link>
     <link name="seg_0099">
-      <pose>1.431268 -0.223843 0.001000 0 0 -0.645500</pose>
+      <pose>1.021444 3.620333 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045720 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1555,11 +1555,11 @@
       </visual>
     </link>
     <link name="seg_0100">
-      <pose>1.462055 -0.248894 0.001000 0 0 -0.720580</pose>
+      <pose>1.001815 3.663412 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045718 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1570,11 +1570,11 @@
       </visual>
     </link>
     <link name="seg_0101">
-      <pose>1.490807 -0.276247 0.001000 0 0 -0.800327</pose>
+      <pose>0.982185 3.706491 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045714 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1585,11 +1585,11 @@
       </visual>
     </link>
     <link name="seg_0102">
-      <pose>1.517299 -0.305791 0.001000 0 0 -0.879307</pose>
+      <pose>0.962556 3.749570 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1600,11 +1600,11 @@
       </visual>
     </link>
     <link name="seg_0103">
-      <pose>1.541199 -0.337454 0.001000 0 0 -0.969101</pose>
+      <pose>0.942926 3.792648 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045709 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1615,11 +1615,11 @@
       </visual>
     </link>
     <link name="seg_0104">
-      <pose>1.562060 -0.371189 0.001000 0 0 -1.064862</pose>
+      <pose>0.923297 3.835727 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045711 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1630,11 +1630,11 @@
       </visual>
     </link>
     <link name="seg_0105">
-      <pose>1.579774 -0.406689 0.001000 0 0 -1.151058</pose>
+      <pose>0.903667 3.878806 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1645,11 +1645,11 @@
       </visual>
     </link>
     <link name="seg_0106">
-      <pose>1.594115 -0.443667 0.001000 0 0 -1.250593</pose>
+      <pose>0.884038 3.921885 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045710 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1660,11 +1660,11 @@
       </visual>
     </link>
     <link name="seg_0107">
-      <pose>1.604951 -0.481832 0.001000 0 0 -1.337722</pose>
+      <pose>0.864408 3.964964 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1675,11 +1675,11 @@
       </visual>
     </link>
     <link name="seg_0108">
-      <pose>1.612549 -0.520780 0.001000 0 0 -1.418522</pose>
+      <pose>0.844779 4.008042 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045716 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1690,11 +1690,11 @@
       </visual>
     </link>
     <link name="seg_0109">
-      <pose>1.616808 -0.560228 0.001000 0 0 -1.507976</pose>
+      <pose>0.825149 4.051121 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1705,11 +1705,11 @@
       </visual>
     </link>
     <link name="seg_0110">
-      <pose>1.617910 -0.599907 0.001000 0 0 -1.578090</pose>
+      <pose>0.805520 4.094200 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045717 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1720,11 +1720,11 @@
       </visual>
     </link>
     <link name="seg_0111">
-      <pose>1.616314 -0.639572 0.001000 0 0 -1.643923</pose>
+      <pose>0.785890 4.137279 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045722 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1735,11 +1735,11 @@
       </visual>
     </link>
     <link name="seg_0112">
-      <pose>1.612029 -0.679039 0.001000 0 0 -1.713985</pose>
+      <pose>0.766261 4.180358 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1750,11 +1750,11 @@
       </visual>
     </link>
     <link name="seg_0113">
-      <pose>1.605233 -0.718159 0.001000 0 0 -1.771639</pose>
+      <pose>0.746631 4.223436 0.001000 0 0 1.998351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1765,11 +1765,11 @@
       </visual>
     </link>
     <link name="seg_0114">
-      <pose>1.596292 -0.756849 0.001000 0 0 -1.824145</pose>
+      <pose>0.727056 4.266539 0.001000 0 0 1.995853</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053339 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1780,11 +1780,11 @@
       </visual>
     </link>
     <link name="seg_0115">
-      <pose>1.585395 -0.795036 0.001000 0 0 -1.873390</pose>
+      <pose>0.710982 4.310839 0.001000 0 0 1.841650</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045725 0.016000 0.002000</size>
+            <size>0.053193 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1795,11 +1795,11 @@
       </visual>
     </link>
     <link name="seg_0116">
-      <pose>1.572660 -0.832655 0.001000 0 0 -1.921023</pose>
+      <pose>0.704483 4.357171 0.001000 0 0 1.578635</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053193 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1810,11 +1810,11 @@
       </visual>
     </link>
     <link name="seg_0117">
-      <pose>1.558153 -0.869627 0.001000 0 0 -1.968420</pose>
+      <pose>0.710255 4.403600 0.001000 0 0 1.315621</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053194 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1825,11 +1825,11 @@
       </visual>
     </link>
     <link name="seg_0118">
-      <pose>1.542028 -0.905926 0.001000 0 0 -2.009259</pose>
+      <pose>0.727899 4.446932 0.001000 0 0 1.052606</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053194 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1840,11 +1840,11 @@
       </visual>
     </link>
     <link name="seg_0119">
-      <pose>1.524466 -0.941552 0.001000 0 0 -2.048323</pose>
+      <pose>0.755581 4.484853 0.001000 0 0 0.828084</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053301 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1855,11 +1855,11 @@
       </visual>
     </link>
     <link name="seg_0120">
-      <pose>1.505552 -0.976479 0.001000 0 0 -2.085913</pose>
+      <pose>0.788097 4.519226 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1870,11 +1870,11 @@
       </visual>
     </link>
     <link name="seg_0121">
-      <pose>1.485358 -1.010683 0.001000 0 0 -2.122311</pose>
+      <pose>0.821138 4.553129 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1885,11 +1885,11 @@
       </visual>
     </link>
     <link name="seg_0122">
-      <pose>1.463949 -1.044140 0.001000 0 0 -2.157788</pose>
+      <pose>0.854179 4.587031 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1900,11 +1900,11 @@
       </visual>
     </link>
     <link name="seg_0123">
-      <pose>1.441375 -1.076826 0.001000 0 0 -2.192604</pose>
+      <pose>0.887221 4.620933 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1915,11 +1915,11 @@
       </visual>
     </link>
     <link name="seg_0124">
-      <pose>1.417684 -1.108712 0.001000 0 0 -2.227009</pose>
+      <pose>0.920262 4.654836 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1930,11 +1930,11 @@
       </visual>
     </link>
     <link name="seg_0125">
-      <pose>1.392869 -1.139731 0.001000 0 0 -2.264065</pose>
+      <pose>0.953303 4.688738 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1945,11 +1945,11 @@
       </visual>
     </link>
     <link name="seg_0126">
-      <pose>1.366961 -1.169844 0.001000 0 0 -2.298471</pose>
+      <pose>0.986345 4.722640 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1960,11 +1960,11 @@
       </visual>
     </link>
     <link name="seg_0127">
-      <pose>1.340028 -1.199041 0.001000 0 0 -2.333287</pose>
+      <pose>1.019386 4.756543 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1975,11 +1975,11 @@
       </visual>
     </link>
     <link name="seg_0128">
-      <pose>1.312086 -1.227273 0.001000 0 0 -2.368764</pose>
+      <pose>1.052427 4.790445 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -1990,11 +1990,11 @@
       </visual>
     </link>
     <link name="seg_0129">
-      <pose>1.283149 -1.254482 0.001000 0 0 -2.405162</pose>
+      <pose>1.085469 4.824347 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2005,11 +2005,11 @@
       </visual>
     </link>
     <link name="seg_0130">
-      <pose>1.253226 -1.280602 0.001000 0 0 -2.442751</pose>
+      <pose>1.118510 4.858250 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2020,11 +2020,11 @@
       </visual>
     </link>
     <link name="seg_0131">
-      <pose>1.222324 -1.305556 0.001000 0 0 -2.481816</pose>
+      <pose>1.151551 4.892152 0.001000 0 0 0.798259</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2035,11 +2035,11 @@
       </visual>
     </link>
     <link name="seg_0132">
-      <pose>1.190450 -1.329255 0.001000 0 0 -2.522654</pose>
+      <pose>1.184415 4.926219 0.001000 0 0 0.808477</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053330 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2050,11 +2050,11 @@
       </visual>
     </link>
     <link name="seg_0133">
-      <pose>1.157564 -1.351525 0.001000 0 0 -2.570051</pose>
+      <pose>1.213537 4.963174 0.001000 0 0 0.998607</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053198 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2065,11 +2065,11 @@
       </visual>
     </link>
     <link name="seg_0134">
-      <pose>1.123659 -1.372206 0.001000 0 0 -2.617684</pose>
+      <pose>1.233499 5.005496 0.001000 0 0 1.261492</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045725 0.016000 0.002000</size>
+            <size>0.053203 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2080,11 +2080,11 @@
       </visual>
     </link>
     <link name="seg_0135">
-      <pose>1.088795 -1.391221 0.001000 0 0 -2.666930</pose>
+      <pose>1.241762 5.051556 0.001000 0 0 1.525091</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053206 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2095,11 +2095,11 @@
       </visual>
     </link>
     <link name="seg_0136">
-      <pose>1.053011 -1.408436 0.001000 0 0 -2.719436</pose>
+      <pose>1.237742 5.098179 0.001000 0 0 1.788542</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053203 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2110,11 +2110,11 @@
       </visual>
     </link>
     <link name="seg_0137">
-      <pose>1.016337 -1.423654 0.001000 0 0 -2.777090</pose>
+      <pose>1.222585 5.142631 0.001000 0 0 2.010022</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053307 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2125,11 +2125,11 @@
       </visual>
     </link>
     <link name="seg_0138">
-      <pose>0.978774 -1.436498 0.001000 0 0 -2.847152</pose>
+      <pose>1.201885 5.185182 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045722 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2140,11 +2140,11 @@
       </visual>
     </link>
     <link name="seg_0139">
-      <pose>0.940426 -1.446762 0.001000 0 0 -2.912984</pose>
+      <pose>1.180603 5.227469 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045717 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2155,11 +2155,11 @@
       </visual>
     </link>
     <link name="seg_0140">
-      <pose>0.901473 -1.454397 0.001000 0 0 -2.983098</pose>
+      <pose>1.159320 5.269756 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2170,11 +2170,11 @@
       </visual>
     </link>
     <link name="seg_0141">
-      <pose>0.862052 -1.458901 0.001000 0 0 -3.072553</pose>
+      <pose>1.138038 5.312042 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045716 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2185,11 +2185,11 @@
       </visual>
     </link>
     <link name="seg_0142">
-      <pose>0.822387 -1.460038 0.001000 0 0 3.129833</pose>
+      <pose>1.116756 5.354329 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2200,11 +2200,11 @@
       </visual>
     </link>
     <link name="seg_0143">
-      <pose>0.782774 -1.457844 0.001000 0 0 3.042704</pose>
+      <pose>1.095473 5.396616 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045710 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2215,11 +2215,11 @@
       </visual>
     </link>
     <link name="seg_0144">
-      <pose>0.743550 -1.451970 0.001000 0 0 2.943169</pose>
+      <pose>1.074191 5.438902 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2230,11 +2230,11 @@
       </visual>
     </link>
     <link name="seg_0145">
-      <pose>0.705027 -1.442481 0.001000 0 0 2.856973</pose>
+      <pose>1.052908 5.481189 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045711 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2245,11 +2245,11 @@
       </visual>
     </link>
     <link name="seg_0146">
-      <pose>0.667535 -1.429534 0.001000 0 0 2.761212</pose>
+      <pose>1.031626 5.523475 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045709 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2260,11 +2260,11 @@
       </visual>
     </link>
     <link name="seg_0147">
-      <pose>0.631398 -1.413167 0.001000 0 0 2.671418</pose>
+      <pose>1.010343 5.565762 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2275,11 +2275,11 @@
       </visual>
     </link>
     <link name="seg_0148">
-      <pose>0.596759 -1.393806 0.001000 0 0 2.592438</pose>
+      <pose>0.989061 5.608049 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045714 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2290,11 +2290,11 @@
       </visual>
     </link>
     <link name="seg_0149">
-      <pose>0.563763 -1.371760 0.001000 0 0 2.512690</pose>
+      <pose>0.967779 5.650335 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045718 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2305,11 +2305,11 @@
       </visual>
     </link>
     <link name="seg_0150">
-      <pose>0.532565 -1.347223 0.001000 0 0 2.437610</pose>
+      <pose>0.946496 5.692622 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045720 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2320,11 +2320,11 @@
       </visual>
     </link>
     <link name="seg_0151">
-      <pose>0.503120 -1.320593 0.001000 0 0 2.375097</pose>
+      <pose>0.925214 5.734909 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2335,11 +2335,11 @@
       </visual>
     </link>
     <link name="seg_0152">
-      <pose>0.475320 -1.292246 0.001000 0 0 2.317801</pose>
+      <pose>0.903931 5.777195 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045721 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2350,11 +2350,11 @@
       </visual>
     </link>
     <link name="seg_0153">
-      <pose>0.449110 -1.262417 0.001000 0 0 2.265612</pose>
+      <pose>0.882649 5.819482 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045724 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2365,11 +2365,11 @@
       </visual>
     </link>
     <link name="seg_0154">
-      <pose>0.424412 -1.231317 0.001000 0 0 2.218306</pose>
+      <pose>0.861367 5.861769 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2380,11 +2380,11 @@
       </visual>
     </link>
     <link name="seg_0155">
-      <pose>0.401136 -1.199134 0.001000 0 0 2.175588</pose>
+      <pose>0.840084 5.904055 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2395,11 +2395,11 @@
       </visual>
     </link>
     <link name="seg_0156">
-      <pose>0.379183 -1.166029 0.001000 0 0 2.137114</pose>
+      <pose>0.818802 5.946342 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2410,11 +2410,11 @@
       </visual>
     </link>
     <link name="seg_0157">
-      <pose>0.358453 -1.132143 0.001000 0 0 2.102522</pose>
+      <pose>0.797519 5.988628 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2425,11 +2425,11 @@
       </visual>
     </link>
     <link name="seg_0158">
-      <pose>0.338846 -1.097594 0.001000 0 0 2.071451</pose>
+      <pose>0.776237 6.030915 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2440,11 +2440,11 @@
       </visual>
     </link>
     <link name="seg_0159">
-      <pose>0.320265 -1.062481 0.001000 0 0 2.043547</pose>
+      <pose>0.754954 6.073202 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2455,11 +2455,11 @@
       </visual>
     </link>
     <link name="seg_0160">
-      <pose>0.302621 -1.026888 0.001000 0 0 2.018477</pose>
+      <pose>0.733672 6.115488 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2470,11 +2470,11 @@
       </visual>
     </link>
     <link name="seg_0161">
-      <pose>0.285829 -0.990884 0.001000 0 0 1.995931</pose>
+      <pose>0.712390 6.157775 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2485,11 +2485,11 @@
       </visual>
     </link>
     <link name="seg_0162">
-      <pose>0.269812 -0.954529 0.001000 0 0 1.975624</pose>
+      <pose>0.691107 6.200062 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2500,11 +2500,11 @@
       </visual>
     </link>
     <link name="seg_0163">
-      <pose>0.254500 -0.917870 0.001000 0 0 1.957299</pose>
+      <pose>0.669825 6.242348 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2515,11 +2515,11 @@
       </visual>
     </link>
     <link name="seg_0164">
-      <pose>0.239830 -0.880948 0.001000 0 0 1.940723</pose>
+      <pose>0.648542 6.284635 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2530,11 +2530,11 @@
       </visual>
     </link>
     <link name="seg_0165">
-      <pose>0.225771 -0.843789 0.001000 0 0 1.924246</pose>
+      <pose>0.627260 6.326922 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2545,11 +2545,11 @@
       </visual>
     </link>
     <link name="seg_0166">
-      <pose>0.212319 -0.806404 0.001000 0 0 1.908134</pose>
+      <pose>0.605977 6.369208 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2560,11 +2560,11 @@
       </visual>
     </link>
     <link name="seg_0167">
-      <pose>0.199397 -0.768834 0.001000 0 0 1.895991</pose>
+      <pose>0.584695 6.411495 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2575,11 +2575,11 @@
       </visual>
     </link>
     <link name="seg_0168">
-      <pose>0.186912 -0.731116 0.001000 0 0 1.884946</pose>
+      <pose>0.563413 6.453781 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2590,11 +2590,11 @@
       </visual>
     </link>
     <link name="seg_0169">
-      <pose>0.174825 -0.693268 0.001000 0 0 1.874860</pose>
+      <pose>0.542130 6.496068 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2605,11 +2605,11 @@
       </visual>
     </link>
     <link name="seg_0170">
-      <pose>0.163156 -0.655289 0.001000 0 0 1.862927</pose>
+      <pose>0.520848 6.538355 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2620,11 +2620,11 @@
       </visual>
     </link>
     <link name="seg_0171">
-      <pose>0.151889 -0.617189 0.001000 0 0 1.853717</pose>
+      <pose>0.499565 6.580641 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2635,11 +2635,11 @@
       </visual>
     </link>
     <link name="seg_0172">
-      <pose>0.140937 -0.578997 0.001000 0 0 1.846424</pose>
+      <pose>0.478283 6.622928 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2650,11 +2650,11 @@
       </visual>
     </link>
     <link name="seg_0173">
-      <pose>0.130253 -0.540729 0.001000 0 0 1.839701</pose>
+      <pose>0.457001 6.665215 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2665,11 +2665,11 @@
       </visual>
     </link>
     <link name="seg_0174">
-      <pose>0.119866 -0.502379 0.001000 0 0 1.830898</pose>
+      <pose>0.435718 6.707501 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2680,11 +2680,11 @@
       </visual>
     </link>
     <link name="seg_0175">
-      <pose>0.109758 -0.463955 0.001000 0 0 1.825115</pose>
+      <pose>0.414436 6.749788 0.001000 0 0 2.037072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2695,11 +2695,11 @@
       </visual>
     </link>
     <link name="seg_0176">
-      <pose>0.099853 -0.425477 0.001000 0 0 1.820385</pose>
+      <pose>0.393652 6.792304 0.001000 0 0 2.013886</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053315 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2710,11 +2710,11 @@
       </visual>
     </link>
     <link name="seg_0177">
-      <pose>0.090138 -0.386952 0.001000 0 0 1.815272</pose>
+      <pose>0.377825 6.836598 0.001000 0 0 1.813883</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053231 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2725,11 +2725,11 @@
       </visual>
     </link>
     <link name="seg_0178">
-      <pose>0.080627 -0.348375 0.001000 0 0 1.809747</pose>
+      <pose>0.371990 6.883134 0.001000 0 0 1.577179</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053230 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2740,11 +2740,11 @@
       </visual>
     </link>
     <link name="seg_0179">
-      <pose>0.071284 -0.309757 0.001000 0 0 1.806620</pose>
+      <pose>0.375020 6.930204 0.001000 0 0 1.435979</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2755,11 +2755,11 @@
       </visual>
     </link>
     <link name="seg_0180">
-      <pose>0.062057 -0.271111 0.001000 0 0 1.803694</pose>
+      <pose>0.381415 6.977110 0.001000 0 0 1.434638</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2770,11 +2770,11 @@
       </visual>
     </link>
     <link name="seg_0181">
-      <pose>0.052967 -0.232433 0.001000 0 0 1.799594</pose>
+      <pose>0.387841 7.024012 0.001000 0 0 1.434638</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2785,11 +2785,11 @@
       </visual>
     </link>
     <link name="seg_0182">
-      <pose>0.043992 -0.193728 0.001000 0 0 1.797668</pose>
+      <pose>0.394267 7.070915 0.001000 0 0 1.434638</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2800,11 +2800,11 @@
       </visual>
     </link>
     <link name="seg_0183">
-      <pose>0.035088 -0.155007 0.001000 0 0 1.795999</pose>
+      <pose>0.400692 7.117817 0.001000 0 0 1.434638</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2815,11 +2815,11 @@
       </visual>
     </link>
     <link name="seg_0184">
-      <pose>0.026254 -0.116269 0.001000 0 0 1.794001</pose>
+      <pose>0.407548 7.164646 0.001000 0 0 1.416234</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053321 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2830,11 +2830,11 @@
       </visual>
     </link>
     <link name="seg_0185">
-      <pose>0.017478 -0.077518 0.001000 0 0 1.793048</pose>
+      <pose>0.419238 7.210226 0.001000 0 0 1.223041</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053230 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2845,11 +2845,11 @@
       </visual>
     </link>
     <link name="seg_0186">
-      <pose>0.008730 -0.038761 0.001000 0 0 1.792506</pose>
+      <pose>0.438539 7.253251 0.001000 0 0 1.075334</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053339 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2860,11 +2860,11 @@
       </visual>
     </link>
     <link name="seg_0187">
-      <pose>-0.000000 0.000000 0.001000 0 0 1.792149</pose>
+      <pose>0.461090 7.294875 0.001000 0 0 1.073250</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2875,11 +2875,11 @@
       </visual>
     </link>
     <link name="seg_0188">
-      <pose>-0.008730 0.038761 0.001000 0 0 1.792506</pose>
+      <pose>0.483684 7.336475 0.001000 0 0 1.073250</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2890,11 +2890,11 @@
       </visual>
     </link>
     <link name="seg_0189">
-      <pose>-0.017478 0.077518 0.001000 0 0 1.793048</pose>
+      <pose>0.505884 7.378272 0.001000 0 0 1.091846</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053316 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2905,11 +2905,11 @@
       </visual>
     </link>
     <link name="seg_0190">
-      <pose>-0.026254 0.116269 0.001000 0 0 1.794001</pose>
+      <pose>0.522582 7.422117 0.001000 0 0 1.322387</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053147 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2920,11 +2920,11 @@
       </visual>
     </link>
     <link name="seg_0191">
-      <pose>-0.035088 0.155007 0.001000 0 0 1.795999</pose>
+      <pose>0.527203 7.468515 0.001000 0 0 1.620679</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053155 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2935,11 +2935,11 @@
       </visual>
     </link>
     <link name="seg_0192">
-      <pose>-0.043992 0.193728 0.001000 0 0 1.797668</pose>
+      <pose>0.517934 7.514211 0.001000 0 0 1.921115</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053160 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2950,11 +2950,11 @@
       </visual>
     </link>
     <link name="seg_0193">
-      <pose>-0.052967 0.232433 0.001000 0 0 1.799594</pose>
+      <pose>0.495566 7.555122 0.001000 0 0 2.221206</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053154 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2965,11 +2965,11 @@
       </visual>
     </link>
     <link name="seg_0194">
-      <pose>-0.062057 0.271111 0.001000 0 0 1.803694</pose>
+      <pose>0.462133 7.587622 0.001000 0 0 2.519498</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053147 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2980,11 +2980,11 @@
       </visual>
     </link>
     <link name="seg_0195">
-      <pose>-0.071284 0.309757 0.001000 0 0 1.806620</pose>
+      <pose>0.421644 7.611616 0.001000 0 0 2.693408</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053338 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -2995,11 +2995,11 @@
       </visual>
     </link>
     <link name="seg_0196">
-      <pose>-0.080627 0.348375 0.001000 0 0 1.809747</pose>
+      <pose>0.378947 7.632060 0.001000 0 0 2.696661</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3010,11 +3010,11 @@
       </visual>
     </link>
     <link name="seg_0197">
-      <pose>-0.090138 0.386952 0.001000 0 0 1.815272</pose>
+      <pose>0.336216 7.652435 0.001000 0 0 2.696661</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3025,11 +3025,11 @@
       </visual>
     </link>
     <link name="seg_0198">
-      <pose>-0.099853 0.425477 0.001000 0 0 1.820385</pose>
+      <pose>0.293676 7.673182 0.001000 0 0 2.678991</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053322 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3040,11 +3040,11 @@
       </visual>
     </link>
     <link name="seg_0199">
-      <pose>-0.109758 0.463955 0.001000 0 0 1.825115</pose>
+      <pose>0.253767 7.698117 0.001000 0 0 2.487095</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053229 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3055,11 +3055,11 @@
       </visual>
     </link>
     <link name="seg_0200">
-      <pose>-0.119866 0.502379 0.001000 0 0 1.830898</pose>
+      <pose>0.218685 7.729609 0.001000 0 0 2.333212</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053338 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3070,11 +3070,11 @@
       </visual>
     </link>
     <link name="seg_0201">
-      <pose>-0.130253 0.540729 0.001000 0 0 1.839701</pose>
+      <pose>0.186046 7.763898 0.001000 0 0 2.329887</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3085,11 +3085,11 @@
       </visual>
     </link>
     <link name="seg_0202">
-      <pose>-0.140937 0.578997 0.001000 0 0 1.846424</pose>
+      <pose>0.153464 7.798242 0.001000 0 0 2.329887</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3100,11 +3100,11 @@
       </visual>
     </link>
     <link name="seg_0203">
-      <pose>-0.151889 0.617189 0.001000 0 0 1.853717</pose>
+      <pose>0.120607 7.832307 0.001000 0 0 2.346388</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053319 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3115,11 +3115,11 @@
       </visual>
     </link>
     <link name="seg_0204">
-      <pose>-0.163156 0.655289 0.001000 0 0 1.862927</pose>
+      <pose>0.084172 7.861884 0.001000 0 0 2.573430</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053147 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3130,11 +3130,11 @@
       </visual>
     </link>
     <link name="seg_0205">
-      <pose>-0.174825 0.693268 0.001000 0 0 1.874860</pose>
+      <pose>0.041580 7.880854 0.001000 0 0 2.871723</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053151 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3145,11 +3145,11 @@
       </visual>
     </link>
     <link name="seg_0206">
-      <pose>-0.186912 0.731116 0.001000 0 0 1.884946</pose>
+      <pose>-0.004712 7.886452 0.001000 0 0 -3.112411</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053161 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3160,11 +3160,11 @@
       </visual>
     </link>
     <link name="seg_0207">
-      <pose>-0.199397 0.768834 0.001000 0 0 1.895991</pose>
+      <pose>-0.050584 7.878108 0.001000 0 0 -2.810934</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053159 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3175,11 +3175,11 @@
       </visual>
     </link>
     <link name="seg_0208">
-      <pose>-0.212319 0.806404 0.001000 0 0 1.908134</pose>
+      <pose>-0.091949 7.856584 0.001000 0 0 -2.512644</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053148 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3190,11 +3190,11 @@
       </visual>
     </link>
     <link name="seg_0209">
-      <pose>-0.225771 0.843789 0.001000 0 0 1.924246</pose>
+      <pose>-0.127370 7.825610 0.001000 0 0 -2.333839</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045732 0.016000 0.002000</size>
+            <size>0.053337 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3205,11 +3205,11 @@
       </visual>
     </link>
     <link name="seg_0210">
-      <pose>-0.239830 0.880948 0.001000 0 0 1.940723</pose>
+      <pose>-0.160019 7.791332 0.001000 0 0 -2.329887</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045731 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3220,11 +3220,11 @@
       </visual>
     </link>
     <link name="seg_0211">
-      <pose>-0.254500 0.917870 0.001000 0 0 1.957299</pose>
+      <pose>-0.192602 7.756988 0.001000 0 0 -2.329887</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3235,11 +3235,11 @@
       </visual>
     </link>
     <link name="seg_0212">
-      <pose>-0.269812 0.954529 0.001000 0 0 1.975624</pose>
+      <pose>-0.225450 7.722912 0.001000 0 0 -2.345821</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053324 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3250,11 +3250,11 @@
       </visual>
     </link>
     <link name="seg_0213">
-      <pose>-0.285829 0.990884 0.001000 0 0 1.995931</pose>
+      <pose>-0.261405 7.692540 0.001000 0 0 -2.534718</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053229 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3265,11 +3265,11 @@
       </visual>
     </link>
     <link name="seg_0214">
-      <pose>-0.302621 1.026888 0.001000 0 0 2.018477</pose>
+      <pose>-0.302126 7.668798 0.001000 0 0 -2.692547</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053338 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3280,11 +3280,11 @@
       </visual>
     </link>
     <link name="seg_0215">
-      <pose>-0.320265 1.062481 0.001000 0 0 2.043547</pose>
+      <pose>-0.344814 7.648336 0.001000 0 0 -2.696661</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3295,11 +3295,11 @@
       </visual>
     </link>
     <link name="seg_0216">
-      <pose>-0.338846 1.097594 0.001000 0 0 2.071451</pose>
+      <pose>-0.387545 7.627961 0.001000 0 0 -2.696661</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3310,11 +3310,11 @@
       </visual>
     </link>
     <link name="seg_0217">
-      <pose>-0.358453 1.132143 0.001000 0 0 2.102522</pose>
+      <pose>-0.430119 7.607283 0.001000 0 0 -2.682255</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053323 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3325,11 +3325,11 @@
       </visual>
     </link>
     <link name="seg_0218">
-      <pose>-0.379183 1.166029 0.001000 0 0 2.137114</pose>
+      <pose>-0.469616 7.581916 0.001000 0 0 -2.458713</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053149 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3340,11 +3340,11 @@
       </visual>
     </link>
     <link name="seg_0219">
-      <pose>-0.401136 1.199134 0.001000 0 0 2.175588</pose>
+      <pose>-0.501013 7.547446 0.001000 0 0 -2.160419</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053148 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3355,11 +3355,11 @@
       </visual>
     </link>
     <link name="seg_0220">
-      <pose>-0.424412 1.231317 0.001000 0 0 2.218306</pose>
+      <pose>-0.520894 7.505267 0.001000 0 0 -1.862129</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053159 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3370,11 +3370,11 @@
       </visual>
     </link>
     <link name="seg_0221">
-      <pose>-0.449110 1.262417 0.001000 0 0 2.265612</pose>
+      <pose>-0.527424 7.459101 0.001000 0 0 -1.560511</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045724 0.016000 0.002000</size>
+            <size>0.053161 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3385,11 +3385,11 @@
       </visual>
     </link>
     <link name="seg_0222">
-      <pose>-0.475320 1.292246 0.001000 0 0 2.317801</pose>
+      <pose>-0.520008 7.413065 0.001000 0 0 -1.261601</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045721 0.016000 0.002000</size>
+            <size>0.053150 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3400,11 +3400,11 @@
       </visual>
     </link>
     <link name="seg_0223">
-      <pose>-0.503120 1.320593 0.001000 0 0 2.375097</pose>
+      <pose>-0.501635 7.369757 0.001000 0 0 -1.077900</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053337 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3415,11 +3415,11 @@
       </visual>
     </link>
     <link name="seg_0224">
-      <pose>-0.532565 1.347223 0.001000 0 0 2.437610</pose>
+      <pose>-0.479138 7.328105 0.001000 0 0 -1.073250</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045720 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3430,11 +3430,11 @@
       </visual>
     </link>
     <link name="seg_0225">
-      <pose>-0.563763 1.371760 0.001000 0 0 2.512690</pose>
+      <pose>-0.456544 7.286505 0.001000 0 0 -1.073250</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045718 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3445,11 +3445,11 @@
       </visual>
     </link>
     <link name="seg_0226">
-      <pose>-0.596759 1.393806 0.001000 0 0 2.592438</pose>
+      <pose>-0.434249 7.244752 0.001000 0 0 -1.087448</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045714 0.016000 0.002000</size>
+            <size>0.053327 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3460,11 +3460,11 @@
       </visual>
     </link>
     <link name="seg_0227">
-      <pose>-0.631398 1.413167 0.001000 0 0 2.671418</pose>
+      <pose>-0.416331 7.201221 0.001000 0 0 -1.273372</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053230 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3475,11 +3475,11 @@
       </visual>
     </link>
     <link name="seg_0228">
-      <pose>-0.667535 1.429534 0.001000 0 0 2.761212</pose>
+      <pose>-0.406209 7.155192 0.001000 0 0 -1.435093</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045709 0.016000 0.002000</size>
+            <size>0.053337 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3490,11 +3490,11 @@
       </visual>
     </link>
     <link name="seg_0229">
-      <pose>-0.705027 1.442481 0.001000 0 0 2.856973</pose>
+      <pose>-0.399920 7.108273 0.001000 0 0 -1.440024</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045711 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3505,11 +3505,11 @@
       </visual>
     </link>
     <link name="seg_0230">
-      <pose>-0.743550 1.451970 0.001000 0 0 2.943169</pose>
+      <pose>-0.393747 7.061337 0.001000 0 0 -1.440024</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3520,11 +3520,11 @@
       </visual>
     </link>
     <link name="seg_0231">
-      <pose>-0.782774 1.457844 0.001000 0 0 3.042704</pose>
+      <pose>-0.387286 7.014447 0.001000 0 0 -1.427712</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045710 0.016000 0.002000</size>
+            <size>0.053327 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3535,11 +3535,11 @@
       </visual>
     </link>
     <link name="seg_0232">
-      <pose>-0.822387 1.460038 0.001000 0 0 3.129833</pose>
+      <pose>-0.375538 6.968987 0.001000 0 0 -1.207669</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045712 0.016000 0.002000</size>
+            <size>0.053152 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3550,11 +3550,11 @@
       </visual>
     </link>
     <link name="seg_0233">
-      <pose>-0.862052 1.458901 0.001000 0 0 -3.072553</pose>
+      <pose>-0.352684 6.928346 0.001000 0 0 -0.909376</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045716 0.016000 0.002000</size>
+            <size>0.053147 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3565,11 +3565,11 @@
       </visual>
     </link>
     <link name="seg_0234">
-      <pose>-0.901473 1.454397 0.001000 0 0 -2.983098</pose>
+      <pose>-0.318894 6.896216 0.001000 0 0 -0.611084</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045719 0.016000 0.002000</size>
+            <size>0.053154 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3580,11 +3580,11 @@
       </visual>
     </link>
     <link name="seg_0235">
-      <pose>-0.940426 1.446762 0.001000 0 0 -2.912984</pose>
+      <pose>-0.277134 6.875476 0.001000 0 0 -0.310852</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045717 0.016000 0.002000</size>
+            <size>0.053160 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3595,11 +3595,11 @@
       </visual>
     </link>
     <link name="seg_0236">
-      <pose>-0.978774 1.436498 0.001000 0 0 -2.847152</pose>
+      <pose>-0.231108 6.868015 0.001000 0 0 -0.010557</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045722 0.016000 0.002000</size>
+            <size>0.053154 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3610,11 +3610,11 @@
       </visual>
     </link>
     <link name="seg_0237">
-      <pose>-1.016337 1.423654 0.001000 0 0 -2.777090</pose>
+      <pose>-0.184226 6.871880 0.001000 0 0 0.174689</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.053334 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3625,11 +3625,11 @@
       </visual>
     </link>
     <link name="seg_0238">
-      <pose>-1.053011 1.408436 0.001000 0 0 -2.719436</pose>
+      <pose>-0.138184 6.871356 0.001000 0 0 -0.201216</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.052406 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3640,11 +3640,11 @@
       </visual>
     </link>
     <link name="seg_0239">
-      <pose>-1.088795 1.391221 0.001000 0 0 -2.666930</pose>
+      <pose>-0.100753 6.848756 0.001000 0 0 -0.885072</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045723 0.016000 0.002000</size>
+            <size>0.052417 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3655,11 +3655,11 @@
       </visual>
     </link>
     <link name="seg_0240">
-      <pose>-1.123659 1.372206 0.001000 0 0 -2.617684</pose>
+      <pose>-0.085971 6.807595 0.001000 0 0 -1.567139</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045725 0.016000 0.002000</size>
+            <size>0.052395 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3670,11 +3670,11 @@
       </visual>
     </link>
     <link name="seg_0241">
-      <pose>-1.157564 1.351525 0.001000 0 0 -2.570051</pose>
+      <pose>-0.098148 6.764243 0.001000 0 0 -2.117351</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053182 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3685,11 +3685,11 @@
       </visual>
     </link>
     <link name="seg_0242">
-      <pose>-1.190450 1.329255 0.001000 0 0 -2.522654</pose>
+      <pose>-0.123745 6.724533 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3700,11 +3700,11 @@
       </visual>
     </link>
     <link name="seg_0243">
-      <pose>-1.222324 1.305556 0.001000 0 0 -2.481816</pose>
+      <pose>-0.150416 6.685421 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3715,11 +3715,11 @@
       </visual>
     </link>
     <link name="seg_0244">
-      <pose>-1.253226 1.280602 0.001000 0 0 -2.442751</pose>
+      <pose>-0.177087 6.646309 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045726 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3730,11 +3730,11 @@
       </visual>
     </link>
     <link name="seg_0245">
-      <pose>-1.283149 1.254482 0.001000 0 0 -2.405162</pose>
+      <pose>-0.203758 6.607197 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3745,11 +3745,11 @@
       </visual>
     </link>
     <link name="seg_0246">
-      <pose>-1.312086 1.227273 0.001000 0 0 -2.368764</pose>
+      <pose>-0.230429 6.568085 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045727 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3760,11 +3760,11 @@
       </visual>
     </link>
     <link name="seg_0247">
-      <pose>-1.340028 1.199041 0.001000 0 0 -2.333287</pose>
+      <pose>-0.257101 6.528973 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045728 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3775,11 +3775,11 @@
       </visual>
     </link>
     <link name="seg_0248">
-      <pose>-1.366961 1.169844 0.001000 0 0 -2.298471</pose>
+      <pose>-0.283772 6.489861 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045729 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3790,11 +3790,2561 @@
       </visual>
     </link>
     <link name="seg_0249">
-      <pose>-1.392869 1.139731 0.001000 0 0 -2.264065</pose>
+      <pose>-0.310443 6.450749 0.001000 0 0 -2.169281</pose>
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.045730 0.016000 0.002000</size>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0250">
+      <pose>-0.337114 6.411636 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0251">
+      <pose>-0.363785 6.372524 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0252">
+      <pose>-0.390456 6.333412 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0253">
+      <pose>-0.417127 6.294300 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0254">
+      <pose>-0.443798 6.255188 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0255">
+      <pose>-0.470469 6.216076 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0256">
+      <pose>-0.497140 6.176964 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0257">
+      <pose>-0.523812 6.137852 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0258">
+      <pose>-0.550483 6.098740 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0259">
+      <pose>-0.577154 6.059628 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0260">
+      <pose>-0.603825 6.020516 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0261">
+      <pose>-0.630496 5.981404 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0262">
+      <pose>-0.657167 5.942292 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0263">
+      <pose>-0.683838 5.903180 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0264">
+      <pose>-0.710509 5.864068 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0265">
+      <pose>-0.737180 5.824956 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0266">
+      <pose>-0.763851 5.785843 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0267">
+      <pose>-0.790523 5.746731 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0268">
+      <pose>-0.817194 5.707619 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0269">
+      <pose>-0.843865 5.668507 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0270">
+      <pose>-0.870536 5.629395 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0271">
+      <pose>-0.897207 5.590283 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0272">
+      <pose>-0.923878 5.551171 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0273">
+      <pose>-0.950549 5.512059 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0274">
+      <pose>-0.977220 5.472947 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0275">
+      <pose>-1.003891 5.433835 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0276">
+      <pose>-1.030562 5.394723 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0277">
+      <pose>-1.057233 5.355611 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0278">
+      <pose>-1.083905 5.316499 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0279">
+      <pose>-1.110576 5.277387 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0280">
+      <pose>-1.137247 5.238275 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0281">
+      <pose>-1.163918 5.199163 0.001000 0 0 -2.169281</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0282">
+      <pose>-1.190482 5.159980 0.001000 0 0 -2.163851</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053337 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0283">
+      <pose>-1.213310 5.118796 0.001000 0 0 -1.989751</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053196 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0284">
+      <pose>-1.226566 5.073926 0.001000 0 0 -1.726366</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053195 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0285">
+      <pose>-1.227731 5.027146 0.001000 0 0 -1.465046</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053199 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0286">
+      <pose>-1.216674 4.981689 0.001000 0 0 -1.199318</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053199 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0287">
+      <pose>-1.194162 4.940662 0.001000 0 0 -0.938564</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053196 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0288">
+      <pose>-1.163711 4.904659 0.001000 0 0 -0.799153</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0289">
+      <pose>-1.130685 4.870742 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0290">
+      <pose>-1.097644 4.836840 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0291">
+      <pose>-1.064603 4.802938 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0292">
+      <pose>-1.031561 4.769035 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0293">
+      <pose>-0.998520 4.735133 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0294">
+      <pose>-0.965479 4.701231 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0295">
+      <pose>-0.932437 4.667328 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0296">
+      <pose>-0.899396 4.633426 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0297">
+      <pose>-0.866355 4.599523 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0298">
+      <pose>-0.833313 4.565621 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0299">
+      <pose>-0.800272 4.531719 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0300">
+      <pose>-0.767275 4.497775 0.001000 0 0 -0.800824</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053339 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0301">
+      <pose>-0.737180 4.461511 0.001000 0 0 -0.955624</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053193 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0302">
+      <pose>-0.715424 4.420091 0.001000 0 0 -1.218639</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053194 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0303">
+      <pose>-0.705184 4.374439 0.001000 0 0 -1.481653</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053194 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0304">
+      <pose>-0.707165 4.327695 0.001000 0 0 -1.744667</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053195 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0305">
+      <pose>-0.720415 4.282652 0.001000 0 0 -1.968858</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053302 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0306">
+      <pose>-0.739398 4.239310 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0307">
+      <pose>-0.759027 4.196232 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0308">
+      <pose>-0.778657 4.153153 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0309">
+      <pose>-0.798286 4.110074 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0310">
+      <pose>-0.817916 4.066995 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0311">
+      <pose>-0.837545 4.023916 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0312">
+      <pose>-0.857175 3.980838 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0313">
+      <pose>-0.876805 3.937759 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0314">
+      <pose>-0.896434 3.894680 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0315">
+      <pose>-0.916064 3.851601 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0316">
+      <pose>-0.935693 3.808522 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0317">
+      <pose>-0.955323 3.765444 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0318">
+      <pose>-0.974952 3.722365 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0319">
+      <pose>-0.994582 3.679286 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0320">
+      <pose>-1.014211 3.636207 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0321">
+      <pose>-1.033841 3.593128 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0322">
+      <pose>-1.053470 3.550050 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0323">
+      <pose>-1.073100 3.506971 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0324">
+      <pose>-1.092729 3.463892 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0325">
+      <pose>-1.112359 3.420813 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0326">
+      <pose>-1.131988 3.377734 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0327">
+      <pose>-1.151618 3.334655 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0328">
+      <pose>-1.170598 3.291314 0.001000 0 0 -1.968755</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053302 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0329">
+      <pose>-1.183841 3.246269 0.001000 0 0 -1.744461</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053194 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0330">
+      <pose>-1.185813 3.199524 0.001000 0 0 -1.481446</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053194 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0331">
+      <pose>-1.175563 3.153874 0.001000 0 0 -1.218432</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053193 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0332">
+      <pose>-1.153798 3.112459 0.001000 0 0 -0.955418</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053193 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0333">
+      <pose>-1.123700 3.076198 0.001000 0 0 -0.800803</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053339 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0334">
+      <pose>-1.090702 3.042254 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0335">
+      <pose>-1.057661 3.008352 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0336">
+      <pose>-1.024619 2.974450 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0337">
+      <pose>-0.991578 2.940547 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0338">
+      <pose>-0.958537 2.906645 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0339">
+      <pose>-0.925495 2.872743 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0340">
+      <pose>-0.892454 2.838840 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0341">
+      <pose>-0.859412 2.804938 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0342">
+      <pose>-0.826371 2.771036 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0343">
+      <pose>-0.793330 2.737133 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0344">
+      <pose>-0.760288 2.703231 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0345">
+      <pose>-0.727247 2.669328 0.001000 0 0 -0.798259</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0346">
+      <pose>-0.694863 2.634843 0.001000 0 0 -0.835384</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053290 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0347">
+      <pose>-0.667612 2.596641 0.001000 0 0 -1.067213</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053195 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0348">
+      <pose>-0.650603 2.553055 0.001000 0 0 -1.330228</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053196 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0349">
+      <pose>-0.645510 2.506544 0.001000 0 0 -1.593242</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053197 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0350">
+      <pose>-0.652685 2.460307 0.001000 0 0 -1.856256</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053198 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0351">
+      <pose>-0.669123 2.416114 0.001000 0 0 -1.997314</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0352">
+      <pose>-0.688730 2.373025 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0353">
+      <pose>-0.708359 2.329946 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0354">
+      <pose>-0.727989 2.286867 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0355">
+      <pose>-0.747618 2.243789 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0356">
+      <pose>-0.767248 2.200710 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0357">
+      <pose>-0.786877 2.157631 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0358">
+      <pose>-0.806507 2.114552 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0359">
+      <pose>-0.826136 2.071473 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0360">
+      <pose>-0.845766 2.028395 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0361">
+      <pose>-0.865395 1.985316 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0362">
+      <pose>-0.885025 1.942237 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0363">
+      <pose>-0.904655 1.899158 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0364">
+      <pose>-0.924284 1.856079 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0365">
+      <pose>-0.943914 1.813001 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0366">
+      <pose>-0.963543 1.769922 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0367">
+      <pose>-0.983173 1.726843 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0368">
+      <pose>-1.002802 1.683764 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0369">
+      <pose>-1.022432 1.640685 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0370">
+      <pose>-1.042061 1.597607 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0371">
+      <pose>-1.061691 1.554528 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0372">
+      <pose>-1.081320 1.511449 0.001000 0 0 -1.998351</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0373">
+      <pose>-1.100361 1.468128 0.001000 0 0 -1.971487</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053310 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0374">
+      <pose>-1.113731 1.423114 0.001000 0 0 -1.747250</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053199 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0375">
+      <pose>-1.115863 1.376370 0.001000 0 0 -1.485469</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053193 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0376">
+      <pose>-1.105822 1.330667 0.001000 0 0 -1.223617</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053199 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0377">
+      <pose>-1.084219 1.289170 0.001000 0 0 -0.958005</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053199 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0378">
+      <pose>-1.052619 1.254618 0.001000 0 0 -0.702027</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053220 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0379">
+      <pose>-1.015203 1.225794 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0380">
+      <pose>-0.976426 1.198637 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0381">
+      <pose>-0.937650 1.171481 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0382">
+      <pose>-0.898873 1.144325 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0383">
+      <pose>-0.860096 1.117168 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0384">
+      <pose>-0.821320 1.090012 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0385">
+      <pose>-0.782543 1.062856 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0386">
+      <pose>-0.743766 1.035699 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0387">
+      <pose>-0.704989 1.008543 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0388">
+      <pose>-0.666213 0.981387 0.001000 0 0 -0.610945</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0389">
+      <pose>-0.627877 0.953653 0.001000 0 0 -0.641632</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053302 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0390">
+      <pose>-0.593709 0.921461 0.001000 0 0 -0.869892</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053202 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0391">
+      <pose>-0.568469 0.882057 0.001000 0 0 -1.132310</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053198 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0392">
+      <pose>-0.554316 0.837454 0.001000 0 0 -1.394729</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053202 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0393">
+      <pose>-0.550091 0.790550 0.001000 0 0 -1.566954</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053338 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0394">
+      <pose>-0.550000 0.743211 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0395">
+      <pose>-0.550000 0.695870 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0396">
+      <pose>-0.550000 0.648530 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0397">
+      <pose>-0.550000 0.601190 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0398">
+      <pose>-0.550000 0.553850 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0399">
+      <pose>-0.550000 0.506509 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0400">
+      <pose>-0.550000 0.459169 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0401">
+      <pose>-0.550000 0.411829 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0402">
+      <pose>-0.550000 0.364488 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0403">
+      <pose>-0.550000 0.317148 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0404">
+      <pose>-0.550000 0.269808 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0405">
+      <pose>-0.550000 0.222468 0.001000 0 0 -1.570796</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0406">
+      <pose>-0.548825 0.175192 0.001000 0 0 -1.521070</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053269 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0407">
+      <pose>-0.540915 0.128972 0.001000 0 0 -1.281332</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053193 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0408">
+      <pose>-0.521800 0.086262 0.001000 0 0 -1.018665</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053204 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0409">
+      <pose>-0.492212 0.050011 0.001000 0 0 -0.753833</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053207 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0410">
+      <pose>-0.454190 0.022736 0.001000 0 0 -0.490713</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053196 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0411">
+      <pose>-0.410393 0.006281 0.001000 0 0 -0.228049</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053188 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0412">
+      <pose>-0.363757 0.000473 0.001000 0 0 -0.020008</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053316 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0413">
+      <pose>-0.316434 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0414">
+      <pose>-0.269094 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0415">
+      <pose>-0.221753 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0416">
+      <pose>-0.174413 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0417">
+      <pose>-0.127073 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0418">
+      <pose>-0.079733 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.95 0.95 0.95 1</ambient>
+          <diffuse>0.95 0.95 0.95 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+        </material>
+      </visual>
+    </link>
+    <link name="seg_0419">
+      <pose>-0.032392 -0.000000 0.001000 0 0 0.000000</pose>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>0.053340 0.024000 0.002000</size>
           </box>
         </geometry>
         <material>
@@ -3810,7 +6360,7 @@
          /top_camera/image_raw topic via ros_gz_image). -->
     <model name="top_camera">
       <static>true</static>
-      <pose>0 0 3.00 0 0 0</pose>
+      <pose>0 2.20 6.30 0 0 0</pose>
       <link name="link">
         <sensor name="camera" type="camera">
           <pose>0 0 0 0 1.5708 0</pose>

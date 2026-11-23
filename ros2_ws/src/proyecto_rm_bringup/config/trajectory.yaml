@@ -13,16 +13,17 @@ trajectory_tracker:
     max_steering_rate: 1.5
     max_lateral_accel: 0.5
 
+    # Wheel-odometry calibration (compensates for tyre scrub in tight turns)
+    odom_scale: 0.97
+
     # Pure-pursuit lookahead
-    lookahead_min: 0.22
-    lookahead_gain: 0.20
-    lookahead_max: 0.50
+    lookahead_min: 0.14
+    lookahead_gain: 0.10
+    lookahead_max: 0.24
 
     # Loop
     control_rate: 50.0
-    trajectory_type: "figure8"          # figure8 | oval
-    figure8_a: 1.8
-    figure8_b: 1.44
+    trajectory_type: "tree"             # tree | oval
     oval_a: 1.5
     oval_b: 1.0
     num_laps: 3
