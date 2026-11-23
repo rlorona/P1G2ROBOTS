@@ -22,7 +22,8 @@ the repository; the corrected dimensioned drawings are in `docs/drawings/`
 │   ├── drawings/                 Dimensioned part drawings (PDF) — plans
 │   ├── figures/                  Figures used in the paper (PDF)
 │   ├── results/                  Simulation results (CSV, summary, figures)
-│   └── video/                    Trajectory video (MP4)
+│   ├── video/                    Trajectory video (MP4)
+│   └── presentation/             Final presentation (PPTX)
 ├── ros2_ws/
 │   └── src/
 │       ├── proyecto_rm_description/   URDF/Xacro, STL meshes, controllers.yaml
