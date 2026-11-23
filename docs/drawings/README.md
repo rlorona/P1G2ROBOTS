@@ -10,7 +10,7 @@ drawing must be re-exported from Fusion and checked against the values below.
 
 ## Corrected drawings
 
-The corrected drawings delivered by the team are at the project root:
+The corrected drawings delivered by the team are in `docs/drawings/`:
 
 - `Assembly.pdf` — corrected assembly drawing (overall views, balloons, BOM).
 - `BASE_LINK.pdf` — corrected chassis (`base_link`) drawing.
